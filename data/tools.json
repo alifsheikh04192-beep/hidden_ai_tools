@@ -1,0 +1,2533 @@
+[
+  {
+    "id": "google-flow",
+    "name": "Google Flow",
+    "tagline": "Google's Veo-powered cinematic video generator with layered prompt control.",
+    "category": "Video",
+    "free": true,
+    "url": "https://labs.google/flow",
+    "emoji": "🎬",
+    "promptPresets": [
+      { "label": "Cinematic establishing shot", "value": "cinematic establishing shot, golden-hour valley, slow push-in, 35mm anamorphic lens flare, volumetric god rays, 8K detail --ar 21:9 --motion 5" },
+      { "label": "Product b-roll", "value": "macro product b-roll, soft studio key light, rotating turntable, shallow depth of field, reflective surface --ar 16:9 --motion 3" }
+    ],
+    "negativeSeed": "blurry, lowres, jitter, watermark, oversaturated",
+    "workflow": [
+      { "title": "Pick a base plate", "detail": "Upload or generate a still frame as the anchor." },
+      { "title": "Layer the prompt", "detail": "Add subject, camera, lighting, and motion tokens in that order." },
+      { "title": "Set motion weight", "detail": "Keep motion 2-5 for realism, 6+ for stylized." }
+    ],
+    "parameters": [{ "label": "Aspect", "value": "21:9" }, { "label": "Motion", "value": "5" }, { "label": "Steps", "value": "50" }]
+  },
+  {
+    "id": "kling-ai",
+    "name": "Kling AI",
+    "tagline": "Long-form text-to-video with surprisingly coherent multi-shot scenes.",
+    "category": "Video",
+    "free": true,
+    "url": "https://klingai.com",
+    "emoji": "🎬",
+    "promptPresets": [
+      { "label": "Documentary intro", "value": "nature documentary opening, aerial drone over rainforest at dawn, mist rolling between trees, David Attenborough narration tone, 24fps --duration 10" }
+    ],
+    "negativeSeed": "flicker, morphing faces, extra fingers, text artifacts",
+    "workflow": [
+      { "title": "Write the scene", "detail": "One paragraph, present tense, sensory detail." },
+      { "title": "Choose duration", "detail": "5s for punch, 10s for narrative." },
+      { "title": "Export ProRes", "detail": "Download ProRes for editing, H.264 for social." }
+    ],
+    "parameters": [{ "label": "Duration", "value": "10s" }, { "label": "FPS", "value": "24" }, { "label": "Mode", "value": "Pro" }]
+  },
+  {
+    "id": "midjourney-v6",
+    "name": "Midjourney v6",
+    "tagline": "The reference for painterly, high-fidelity still imagery and style references.",
+    "category": "Photo",
+    "free": true,
+    "url": "https://midjourney.com",
+    "emoji": "🖼️",
+    "promptPresets": [
+      { "label": "Editorial portrait", "value": "editorial portrait, soft north-facing window light, 85mm f/1.4, natural skin texture, muted teal grade, shot on Portra 400 --ar 4:5 --style raw --v 6" },
+      { "label": "Architectural digest", "value": "brutalist concrete stairwell, raking afternoon light, deep shadows, architectural digest aesthetic, ultra-detailed --ar 3:4 --v 6" }
+    ],
+    "negativeSeed": "plastic skin, over-smoothed, cartoonish, distorted hands",
+    "workflow": [
+      { "title": "Compose the prompt", "detail": "Subject, medium, lighting, lens, grade, parameters." },
+      { "title": "Use --sref", "detail": "Paste a style reference URL for consistent look across a series." },
+      { "title": "Upscale", "detail": "Choose Subtle or Creative upscale; Creative for more detail." }
+    ],
+    "parameters": [{ "label": "Version", "value": "v6" }, { "label": "Aspect", "value": "4:5" }, { "label": "Stylize", "value": "100" }]
+  },
+  {
+    "id": "runway-gen3",
+    "name": "Runway Gen-3",
+    "tagline": "Director-grade image-to-video with brushable motion control and camera moves.",
+    "category": "Video",
+    "free": true,
+    "url": "https://runwayml.com",
+    "emoji": "✈️",
+    "promptPresets": [
+      { "label": "Slow dolly forward", "value": "slow dolly forward through neon-lit alley, rain on pavement, reflections, shallow depth of field, 5s loop" }
+    ],
+    "negativeSeed": "warping, banding, flickering lights, unstable geometry",
+    "workflow": [
+      { "title": "Import a still", "detail": "Bring in a Midjourney or Photopea frame as the source." },
+      { "title": "Brush motion", "detail": "Paint directional arrows to define subject motion vs. camera motion." },
+      { "title": "Set the camera move", "detail": "Choose dolly, pan, or orbit from the motion menu." }
+    ],
+    "parameters": [{ "label": "Length", "value": "5s" }, { "label": "Resolution", "value": "1080p" }, { "label": "Loop", "value": "off" }]
+  },
+  {
+    "id": "photopea-ai",
+    "name": "Photopea AI",
+    "tagline": "Browser-based Photoshop alternative with AI fill, cutout, and upscaling baked in.",
+    "category": "Photo",
+    "free": true,
+    "url": "https://www.photopea.com",
+    "emoji": "🖼️",
+    "promptPresets": [
+      { "label": "Generative fill", "value": "select area > Edit > AI Fill > \"extend sky with soft cumulus clouds, matching exposure and grain\"" }
+    ],
+    "negativeSeed": "seams, mismatched grain, halo around edges",
+    "workflow": [
+      { "title": "Open the file", "detail": "File > Open, or paste from clipboard. PSDs supported." },
+      { "title": "Make a selection", "detail": "Lasso or Select Subject to isolate the region." },
+      { "title": "AI Fill", "detail": "Edit > AI Fill, describe the replacement, apply." }
+    ],
+    "parameters": [{ "label": "Engine", "value": "Built-in" }, { "label": "Output", "value": "PSD/PNG" }]
+  },
+  {
+    "id": "kaiber-cartoon",
+    "name": "Kaiber Cartoon Engine",
+    "tagline": "Turn any clip into a stylized cartoon sequence with consistent character identity.",
+    "category": "Cartoon",
+    "free": false,
+    "url": "https://kaiber.ai",
+    "emoji": "🎈",
+    "promptPresets": [
+      { "label": "Anime transformation", "value": "transform source clip into 90s cel-shaded anime, maintain character identity, 12fps on twos, soft film grain, Makoto Shinkai sky palette" },
+      { "label": "Comic book panel", "value": "halftone comic book style, bold ink outlines, 4-color Ben-Day dots, dramatic foreshortening, keep face identity locked" }
+    ],
+    "negativeSeed": "3D render, photorealism, soft CGI shading, identity drift between frames",
+    "workflow": [
+      { "title": "Upload reference", "detail": "Provide a face or style reference to lock identity." },
+      { "title": "Pick a cartoon preset", "detail": "Anime, comic, claymation, or watercolor." },
+      { "title": "Render on twos", "detail": "12fps saves credits and reads as hand-drawn." }
+    ],
+    "parameters": [{ "label": "Style", "value": "Anime" }, { "label": "FPS", "value": "12" }, { "label": "Identity lock", "value": "on" }]
+  },
+  {
+    "id": "viggle-3d-dance",
+    "name": "Viggle 3D Dance",
+    "tagline": "Animate any character into a full 3D dance routine from a single image.",
+    "category": "3D",
+    "free": false,
+    "url": "https://viggle.ai",
+    "emoji": "💃",
+    "promptPresets": [
+      { "label": "Character dance routine", "value": "animate character into a 360 spinning hip-hop dance, full body, consistent clothing, neutral studio backdrop, 8s at 30fps" }
+    ],
+    "negativeSeed": "limb interpenetration, floating feet, costume swaps, jittery hands",
+    "workflow": [
+      { "title": "Upload a clean character image", "detail": "Full-body, neutral pose, plain background works best." },
+      { "title": "Pick a motion template", "detail": "Browse the dance library or upload a reference video." },
+      { "title": "Composite the background", "detail": "Replace the backdrop with any scene after render." }
+    ],
+    "parameters": [{ "label": "Duration", "value": "8s" }, { "label": "FPS", "value": "30" }, { "label": "Background", "value": "Green screen" }]
+  },
+  {
+    "id": "meshy-3d",
+    "name": "Meshy AI 3D",
+    "tagline": "Image-to-3D mesh generator with PBR textures ready for Blender or Unity.",
+    "category": "3D",
+    "free": false,
+    "url": "https://www.meshy.ai",
+    "emoji": "🖥️",
+    "promptPresets": [
+      { "label": "Game asset from sketch", "value": "convert sketch to low-poly game asset, PBR metallic-roughness textures, 4k albedo + normal + ORM, symmetrical topology, 20k tris max" }
+    ],
+    "negativeSeed": "non-manifold geometry, floating vertices, baked lighting in albedo",
+    "workflow": [
+      { "title": "Provide input", "detail": "Upload an image or write a text prompt." },
+      { "title": "Choose poly budget", "detail": "Low-poly for games, high-poly for cinematic." },
+      { "title": "Export", "detail": "Download GLB, FBX, or USDZ with PBR maps." }
+    ],
+    "parameters": [{ "label": "Triangles", "value": "20k" }, { "label": "Texture", "value": "4K PBR" }, { "label": "Format", "value": "GLB" }]
+  },
+  {
+    "id": "eleven-voice",
+    "name": "ElevenLabs Voice Clone",
+    "tagline": "Studio-grade voice cloning from 60 seconds of sample audio.",
+    "category": "Audio",
+    "free": false,
+    "url": "https://elevenlabs.io",
+    "emoji": "🎧",
+    "promptPresets": [
+      { "label": "Narration clone", "value": "clone voice from 60s sample, neutral expressive delivery, 44.1kHz, stable temperature 0.5, multilingual v2 model" }
+    ],
+    "negativeSeed": "robotic cadence, breath cuts, accent bleed, clipping",
+    "workflow": [
+      { "title": "Record a clean sample", "detail": "60+ seconds, quiet room, consistent mic distance." },
+      { "title": "Add the voice", "detail": "Voices > Add > Instant Voice Clone, upload, consent, train." },
+      { "title": "Generate narration", "detail": "Paste your script, pick the cloned voice, set stability." }
+    ],
+    "parameters": [{ "label": "Model", "value": "Multilingual v2" }, { "label": "Stability", "value": "0.5" }, { "label": "Clarity", "value": "0.75" }]
+  },
+  {
+    "id": "suno-audio",
+    "name": "Suno Full Songs",
+    "tagline": "Generate complete songs with vocals, instrumentation, and structure from a lyric.",
+    "category": "Audio",
+    "free": false,
+    "url": "https://suno.com",
+    "emoji": "🎵",
+    "promptPresets": [
+      { "label": "Indie folk anthem", "value": "indie folk anthem, fingerpicked guitar, warm male vocal, building to full band chorus, 120bpm, key of G, verse-chorus-bridge structure" }
+    ],
+    "negativeSeed": "muddy low end, autotuned warble, abrupt endings, lyric garbling",
+    "workflow": [
+      { "title": "Write or paste lyrics", "detail": "Structure with [Verse], [Chorus], [Bridge] tags." },
+      { "title": "Describe the sound", "detail": "Genre, mood, instrumentation, vocal style." },
+      { "title": "Extend and master", "detail": "Use Extend to add sections, then download mastered WAV." }
+    ],
+    "parameters": [{ "label": "Model", "value": "v4" }, { "label": "Length", "value": "4m" }, { "label": "Vocals", "value": "on" }]
+  },
+  {
+    "id": "make-automation",
+    "name": "Make.com AI Bots",
+    "tagline": "Drag-and-drop marketing automation with LLM nodes for outreach and content ops.",
+    "category": "Automation",
+    "free": false,
+    "url": "https://www.make.com",
+    "emoji": "⚙️",
+    "promptPresets": [
+      { "label": "Cold outreach bot", "value": "scenario: RSS watch > LLM summarize + personalize > Gmail send > Slack log. Rate limit 50/hr, A/B subject lines, opt-out footer auto-appended." }
+    ],
+    "negativeSeed": "unthrottled sends, missing opt-out, duplicate contacts, plain-text no personalization",
+    "workflow": [
+      { "title": "Map the trigger", "detail": "RSS, form, or schedule as the starting module." },
+      { "title": "Add an LLM node", "detail": "OpenAI or Anthropic module to summarize and personalize." },
+      { "title": "Set the action", "detail": "Gmail, Slack, or Sheets as the output, with rate limits." }
+    ],
+    "parameters": [{ "label": "Rate limit", "value": "50/hr" }, { "label": "Model", "value": "GPT-4o" }, { "label": "Router", "value": "A/B" }]
+  },
+  {
+    "id": "n8n-content",
+    "name": "n8n Content Pipeline",
+    "tagline": "Self-hostable workflow engine with AI agents that draft, schedule, and publish.",
+    "category": "Automation",
+    "free": false,
+    "url": "https://n8n.io",
+    "emoji": "🔧",
+    "promptPresets": [
+      { "label": "Auto-blog pipeline", "value": "workflow: keyword watch > agent research > agent draft > human-in-loop approve > WordPress publish > social cross-post. Guardrails: no medical claims, cite sources." }
+    ],
+    "negativeSeed": "unreviewed publishing, uncited claims, duplicate slugs, broken images",
+    "workflow": [
+      { "title": "Watch a source", "detail": "Keyword sheet, trend API, or queue as the trigger." },
+      { "title": "Chain AI agents", "detail": "Research agent drafts, editor agent reviews." },
+      { "title": "Publish with guardrails", "detail": "Human approval gate before any live post." }
+    ],
+    "parameters": [{ "label": "Agents", "value": "2" }, { "label": "Approvals", "value": "Required" }, { "label": "Host", "value": "Self-host" }]
+  },
+  {
+    "id": "pika-labs",
+    "name": "Pika Labs",
+    "tagline": "Playful text-to-video with local editing, lip sync, and inflate effects.",
+    "category": "Video",
+    "free": false,
+    "url": "https://pika.art",
+    "emoji": "🎬",
+    "promptPresets": [
+      { "label": "Surreal transition", "value": "morph coffee cup into tornado of beans, seamless dissolve, warm palette, 3s --motion 4" }
+    ],
+    "negativeSeed": "hard cuts, color shifts mid-clip, jagged edges",
+    "workflow": [
+      { "title": "Start from text or image", "detail": "Type a prompt or upload a still." },
+      { "title": "Apply a Pika effect", "detail": "Inflate, melt, or cake-ify regions with brush." },
+      { "title": "Lip sync", "detail": "Add audio for talking-head clips." }
+    ],
+    "parameters": [{ "label": "Length", "value": "3s" }, { "label": "Motion", "value": "4" }]
+  },
+  {
+    "id": "haiper-video",
+    "name": "Haiper AI",
+    "tagline": "Fast text-to-video with strong physics simulation and repainting tools.",
+    "category": "Video",
+    "free": false,
+    "url": "https://haiper.ai",
+    "emoji": "🎬",
+    "promptPresets": [
+      { "label": "Physics demo", "value": "dominoes falling in slow motion down a spiral staircase, accurate physics, 4s 60fps" }
+    ],
+    "negativeSeed": "objects clipping through each other, floaty gravity",
+    "workflow": [
+      { "title": "Describe the action", "detail": "Focus on motion and physics words." },
+      { "title": "Set FPS", "detail": "60fps for slow-mo, 24fps for cinematic." },
+      { "title": "Repaint", "detail": "Swap colors of any object post-render." }
+    ],
+    "parameters": [{ "label": "FPS", "value": "60" }, { "label": "Length", "value": "4s" }]
+  },
+  {
+    "id": "stable-video-diffusion",
+    "name": "Stable Video Diffusion",
+    "tagline": "Open-source image-to-video model you can run locally or on Replicate.",
+    "category": "Video",
+    "free": false,
+    "url": "https://stability.ai",
+    "emoji": "🎬",
+    "promptPresets": [
+      { "label": "Subtle motion", "value": "gentle camera pan across still landscape, 14 frames, low motion bucket 40" }
+    ],
+    "negativeSeed": "fast motion, flickering, color drift",
+    "workflow": [
+      { "title": "Pick a host", "detail": "Run locally via ComfyUI or on Replicate." },
+      { "title": "Upload anchor frame", "detail": "A clean still image works best." },
+      { "title": "Tune motion bucket", "detail": "Lower = subtle, higher = dramatic." }
+    ],
+    "parameters": [{ "label": "Frames", "value": "14" }, { "label": "Motion bucket", "value": "40" }]
+  },
+  {
+    "id": "luma-dream",
+    "name": "Luma Dream Machine",
+    "tagline": "Photoreal video with physics-aware camera moves and keyframe control.",
+    "category": "Video",
+    "free": false,
+    "url": "https://lumalabs.ai",
+    "emoji": "🎬",
+    "promptPresets": [
+      { "label": "Physics-aware flythrough", "value": "fly through a foggy pine forest at dawn, physics-accurate branch sway, soft volumetric light, 6s 24fps" }
+    ],
+    "negativeSeed": "physics glitches, branch clipping, flickering shadows",
+    "workflow": [
+      { "title": "Prompt or upload", "detail": "Text-to-video or image-to-video." },
+      { "title": "Pick camera", "detail": "Orbit, dolly, or free-fly." },
+      { "title": "Render", "detail": "6s clips at 1080p." }
+    ],
+    "parameters": [{ "label": "Length", "value": "6s" }, { "label": "FPS", "value": "24" }]
+  },
+  {
+    "id": "hedra-song",
+    "name": "Hedra Singing Avatar",
+    "tagline": "Animate a still portrait into a lip-synced singing performance.",
+    "category": "Cartoon",
+    "free": false,
+    "url": "https://hedra.com",
+    "emoji": "🎤",
+    "promptPresets": [
+      { "label": "Lip-sync performance", "value": "animate portrait to sing provided audio, accurate lip sync, expressive brows, stable identity, 30s clip" }
+    ],
+    "negativeSeed": "mouth warp, identity drift, dead eyes, audio desync",
+    "workflow": [
+      { "title": "Upload portrait", "detail": "Front-facing, neutral expression." },
+      { "title": "Add audio", "detail": "Vocals or TTS output." },
+      { "title": "Generate", "detail": "30s lip-synced performance." }
+    ],
+    "parameters": [{ "label": "Length", "value": "30s" }, { "label": "Sync", "value": "on" }]
+  },
+  {
+    "id": "domo-ai",
+    "name": "Domo AI",
+    "tagline": "Transform videos into anime, comic, and illustrated styles with one click.",
+    "category": "Cartoon",
+    "free": false,
+    "url": "https://domoai.com",
+    "emoji": "🎨",
+    "promptPresets": [
+      { "label": "Anime style transfer", "value": "convert live video to Studio Ghibli anime, maintain scene composition, 24fps, soft watercolor backgrounds" }
+    ],
+    "negativeSeed": "live-action bleed, inconsistent line weight, flickering styles",
+    "workflow": [
+      { "title": "Upload your video", "detail": "Any length up to 60s." },
+      { "title": "Choose a style", "detail": "Anime, comic, 3D, or watercolor." },
+      { "title": "Render", "detail": "Clip is restyled frame-by-frame." }
+    ],
+    "parameters": [{ "label": "Style", "value": "Anime" }, { "label": "Max length", "value": "60s" }]
+  },
+  {
+    "id": "wonder-dynamics",
+    "name": "Wonder Dynamics",
+    "tagline": "Auto-rig and animate CG characters into live-action footage automatically.",
+    "category": "3D",
+    "free": false,
+    "url": "https://wonderdynamics.com",
+    "emoji": "🤖",
+    "promptPresets": [
+      { "label": "Character insertion", "value": "detect actor in footage, replace with CG character, match lighting and shadows, auto-tracked, 1080p export" }
+    ],
+    "negativeSeed": "tracking drift, mismatched lighting, floating shadows",
+    "workflow": [
+      { "title": "Upload footage", "detail": "A single actor shot works best." },
+      { "title": "Pick a CG character", "detail": "Upload your rigged model or use a preset." },
+      { "title": "Export", "detail": "Download composited video or separate passes." }
+    ],
+    "parameters": [{ "label": "Resolution", "value": "1080p" }, { "label": "Tracking", "value": "Auto" }]
+  },
+  {
+    "id": "rodin-3d",
+    "name": "Rodin Gen-1 3D",
+    "tagline": "Diffusion-based 3D avatar generation from a single photo.",
+    "category": "3D",
+    "free": false,
+    "url": "https://hyperhuman.deemos.com",
+    "emoji": "👨‍💻",
+    "promptPresets": [
+      { "label": "Avatar from selfie", "value": "generate rigged 3D avatar from single selfie, PBR skin, ARKit blendshapes, 10k tris, T-pose ready for Mixamo" }
+    ],
+    "negativeSeed": "unrigged mesh, floating hair cards, mismatched skin tone",
+    "workflow": [
+      { "title": "Upload selfie", "detail": "Front-facing, good lighting." },
+      { "title": "Generate mesh", "detail": "Diffusion produces a rigged avatar." },
+      { "title": "Export", "detail": "FBX with ARKit blendshapes." }
+    ],
+    "parameters": [{ "label": "Triangles", "value": "10k" }, { "label": "Rig", "value": "ARKit" }]
+  },
+  {
+    "id": "tripo-3d",
+    "name": "Tripo3D",
+    "tagline": "Text or image to 3D model in seconds, optimized for game-ready assets.",
+    "category": "3D",
+    "free": false,
+    "url": "https://tripo3d.ai",
+    "emoji": "🧊",
+    "promptPresets": [
+      { "label": "Prop from prompt", "value": "generate game-ready fantasy potion bottle, ornate filigree, PBR textures, 8k tris, symmetrical" }
+    ],
+    "negativeSeed": "asymmetrical props, noisy topology, missing UVs",
+    "workflow": [
+      { "title": "Type a prompt or upload image", "detail": "Be specific about the object and style." },
+      { "title": "Generate", "detail": "Tripo produces a draft mesh in seconds." },
+      { "title": "Refine & download", "detail": "Smooth, retexture, export GLB/FBX." }
+    ],
+    "parameters": [{ "label": "Triangles", "value": "8k" }, { "label": "Format", "value": "GLB" }]
+  },
+  {
+    "id": "csmtine-3d",
+    "name": "CSM AI 3D",
+    "tagline": "Turn images, sketches, or text into production-ready 3D meshes.",
+    "category": "3D",
+    "free": false,
+    "url": "https://3d.csm.ai",
+    "emoji": "📐",
+    "promptPresets": [
+      { "label": "Mesh from sketch", "value": "convert concept sketch to clean quad mesh, UV unwrapped, PBR textures, 15k tris, game-ready" }
+    ],
+    "negativeSeed": "ngons, broken UVs, mixed shading",
+    "workflow": [
+      { "title": "Upload input", "detail": "Sketch, image, or text prompt." },
+      { "title": "Generate mesh", "detail": "CSM produces a UV-unwrapped model." },
+      { "title": "Download", "detail": "Export to Blender or Unity." }
+    ],
+    "parameters": [{ "label": "Triangles", "value": "15k" }, { "label": "UV", "value": "Auto" }]
+  },
+  {
+    "id": "play-ht",
+    "name": "Play.ht Voice",
+    "tagline": "Ultra-realistic text-to-speech with 800+ voices and instant voice cloning.",
+    "category": "Audio",
+    "free": false,
+    "url": "https://play.ht",
+    "emoji": "🎙️",
+    "promptPresets": [
+      { "label": "Podcast narration", "value": "generate podcast intro narration, warm conversational male voice, 44.1kHz, expressive, 2-3 sentence pace" }
+    ],
+    "negativeSeed": "monotone delivery, robotic pacing, mispronunciations",
+    "workflow": [
+      { "title": "Paste your script", "detail": "Break long scripts into paragraphs." },
+      { "title": "Pick or clone a voice", "detail": "800+ presets or instant clone from 30s." },
+      { "title": "Generate & download", "detail": "Export MP3 or WAV." }
+    ],
+    "parameters": [{ "label": "Voices", "value": "800+" }, { "label": "Sample rate", "value": "44.1kHz" }]
+  },
+  {
+    "id": "udio-music",
+    "name": "Udio Music",
+    "tagline": "High-fidelity AI music generation with stems, covers, and extension tools.",
+    "category": "Audio",
+    "free": false,
+    "url": "https://www.udio.com",
+    "emoji": "🎶",
+    "promptPresets": [
+      { "label": "Lo-fi study beat", "value": "lo-fi hip-hop study beat, vinyl crackle, jazzy piano, 75bpm, mellow, 2 minute loop" }
+    ],
+    "negativeSeed": "harsh transients, clipping, repetitive drums",
+    "workflow": [
+      { "title": "Describe the track", "detail": "Genre, mood, tempo, instrumentation." },
+      { "title": "Generate", "detail": "Udio produces a 2-minute draft." },
+      { "title": "Extend & remix", "detail": "Add sections or download stems." }
+    ],
+    "parameters": [{ "label": "Length", "value": "2m" }, { "label": "BPM", "value": "75" }]
+  },
+  {
+    "id": "descript-ai",
+    "name": "Descript Overdub",
+    "tagline": "Edit audio by editing text. Type to generate voice in your own cloned voice.",
+    "category": "Audio",
+    "free": false,
+    "url": "https://www.descript.com",
+    "emoji": "📝",
+    "promptPresets": [
+      { "label": "Fix a flub", "value": "select transcribed word > type correction > Overdub generates matching voice from your cloned model, seamless splice" }
+    ],
+    "negativeSeed": "tone mismatch, audible splice, breath gaps",
+    "workflow": [
+      { "title": "Import audio", "detail": "Descript auto-transcribes it." },
+      { "title": "Clone your voice", "detail": "10 minutes of training audio." },
+      { "title": "Type to fix", "detail": "Edit text, Overdub fills the audio." }
+    ],
+    "parameters": [{ "label": "Clone time", "value": "10m" }, { "label": "Output", "value": "WAV" }]
+  },
+  {
+    "id": "murf-ai",
+    "name": "Murf AI Voiceover",
+    "tagline": "Studio-quality voiceovers for presentations, ads, and explainer videos.",
+    "category": "Audio",
+    "free": false,
+    "url": "https://murf.ai",
+    "emoji": "📢",
+    "promptPresets": [
+      { "label": "Explainer voiceover", "value": "professional female voiceover for 60s explainer, friendly confident tone, neutral American accent, 48kHz" }
+    ],
+    "negativeSeed": "flat delivery, background hiss, pace too fast",
+    "workflow": [
+      { "title": "Paste script", "detail": "Break into slides or scenes." },
+      { "title": "Choose a voice", "detail": "120+ studio voices across languages." },
+      { "title": "Sync to video", "detail": "Import timeline, align audio blocks." }
+    ],
+    "parameters": [{ "label": "Voices", "value": "120+" }, { "label": "Sample rate", "value": "48kHz" }]
+  },
+  {
+    "id": "zapier-ai",
+    "name": "Zapier AI Actions",
+    "tagline": "Connect 7,000+ apps with AI-powered automation and natural language triggers.",
+    "category": "Automation",
+    "free": false,
+    "url": "https://zapier.com",
+    "emoji": "⚡",
+    "promptPresets": [
+      { "label": "Lead routing zap", "value": "trigger: new form lead > AI classify lead temperature > route hot to Slack #sales, warm to CRM, cold to nurture sequence" }
+    ],
+    "negativeSeed": "unclassified leads, missing CRM sync, duplicate zaps",
+    "workflow": [
+      { "title": "Pick a trigger", "detail": "Form, email, webhook, or schedule." },
+      { "title": "Add AI step", "detail": "Use AI by Zapier to classify or summarize." },
+      { "title": "Set actions", "detail": "Route to Slack, CRM, or email." }
+    ],
+    "parameters": [{ "label": "Apps", "value": "7000+" }, { "label": "AI", "value": "Built-in" }]
+  },
+  {
+    "id": "bardeen-ai",
+    "name": "Bardeen AI",
+    "tagline": "Browser automation that scrapes, enriches, and syncs data without code.",
+    "category": "Automation",
+    "free": false,
+    "url": "https://bardeen.ai",
+    "emoji": "🧲",
+    "promptPresets": [
+      { "label": "LinkedIn enrichment", "value": "scrape LinkedIn profile > AI extract role + company + email pattern > append to Google Sheets > draft outreach in Gmail" }
+    ],
+    "negativeSeed": "stale data, missing consent, broken selectors",
+    "workflow": [
+      { "title": "Open the builder", "detail": "Chrome extension, click any element." },
+      { "title": "Add AI extraction", "detail": "Ask Bardeen to parse the page." },
+      { "title": "Sync to destination", "detail": "Sheets, Notion, HubSpot, or Gmail." }
+    ],
+    "parameters": [{ "label": "Type", "value": "Browser" }, { "label": "AI", "value": "Built-in" }]
+  },
+  {
+    "id": "activepieces",
+    "name": "Activepieces",
+    "tagline": "Open-source Zapier alternative with AI text and image generation blocks.",
+    "category": "Automation",
+    "free": false,
+    "url": "https://www.activepieces.com",
+    "emoji": "🧩",
+    "promptPresets": [
+      { "label": "Social autopilot", "value": "trigger: schedule > AI generate tweet from blog URL > add to Twitter draft > Slack approval > auto-post on approve" }
+    ],
+    "negativeSeed": "unapproved posts, duplicate tweets, broken links",
+    "workflow": [
+      { "title": "Pick a trigger", "detail": "Schedule, webhook, or app event." },
+      { "title": "Add AI block", "detail": "OpenAI generate, summarize, or classify." },
+      { "title": "Publish", "detail": "Post to social or save to CRM." }
+    ],
+    "parameters": [{ "label": "Open source", "value": "yes" }, { "label": "AI", "value": "OpenAI" }]
+  },
+  {
+    "id": "flowise-ai",
+    "name": "Flowise AI",
+    "tagline": "Drag-and-drop builder for custom LLM agents, RAG pipelines, and chatbots.",
+    "category": "Automation",
+    "free": false,
+    "url": "https://flowiseai.com",
+    "emoji": "🌊",
+    "promptPresets": [
+      { "label": "RAG chatbot", "value": "build retrieval chatbot: load PDFs > chunk + embed into Pinecone > GPT-4o answer with citations > deploy as widget" }
+    ],
+    "negativeSeed": "hallucinated citations, missing source docs, stale embeddings",
+    "workflow": [
+      { "title": "Add a loader", "detail": "PDF, web scraper, or API source." },
+      { "title": "Build the chain", "detail": "Embed > retrieve > LLM with prompt template." },
+      { "title": "Deploy", "detail": "Embed as a chat widget or API." }
+    ],
+    "parameters": [{ "label": "Vector DB", "value": "Pinecone" }, { "label": "LLM", "value": "GPT-4o" }]
+  },
+  {
+    "id": "github-copilot",
+    "name": "GitHub Copilot",
+    "tagline": "AI pair programmer that autocompletes code and answers questions in your IDE.",
+    "category": "Coding",
+    "free": false,
+    "url": "https://github.com/features/copilot",
+    "emoji": "🤖",
+    "promptPresets": [
+      { "label": "Boilerplate generator", "value": "// generate a React hook that debounces a value with a configurable delay and cleanup\nconst useDebouncedValue = " }
+    ],
+    "negativeSeed": "outdated APIs, hallucinated imports, insecure patterns",
+    "workflow": [
+      { "title": "Install the extension", "detail": "VS Code, JetBrains, or Neovim." },
+      { "title": "Write a comment", "detail": "Copilot suggests the implementation." },
+      { "title": "Chat for refactors", "detail": "Ask Copilot Chat to explain or rewrite." }
+    ],
+    "parameters": [{ "label": "Model", "value": "GPT-4o" }, { "label": "IDE", "value": "VS Code" }]
+  },
+  {
+    "id": "cursor-ai",
+    "name": "Cursor IDE",
+    "tagline": "AI-native code editor with whole-codebase context and multi-file edits.",
+    "category": "Coding",
+    "free": false,
+    "url": "https://cursor.sh",
+    "emoji": "🖱️",
+    "promptPresets": [
+      { "label": "Multi-file feature", "value": "@codebase add a dark mode toggle: update Tailwind config, add a theme provider, wire a switch in the header, persist to localStorage" }
+    ],
+    "negativeSeed": "wrong file paths, partial edits, broken imports",
+    "workflow": [
+      { "title": "Open your repo", "detail": "Cursor indexes the whole codebase." },
+      { "title": "Use @codebase", "detail": "Ask for a feature touching multiple files." },
+      { "title": "Review the diff", "detail": "Accept or reject per-file changes." }
+    ],
+    "parameters": [{ "label": "Context", "value": "Full repo" }, { "label": "Model", "value": "Claude 3.5" }]
+  },
+  {
+    "id": "codeium",
+    "name": "Codeium",
+    "tagline": "Free AI autocomplete and chat for 70+ languages, fast and private.",
+    "category": "Coding",
+    "free": false,
+    "url": "https://codeium.com",
+    "emoji": "⚡",
+    "promptPresets": [
+      { "label": "Unit test stub", "value": "// generate Jest tests for the parseCSV function covering empty input, single row, multi-row, and malformed data" }
+    ],
+    "negativeSeed": "flaky tests, uncovered edge cases, mocked imports",
+    "workflow": [
+      { "title": "Install the plugin", "detail": "VS Code, JetBrains, or Vim." },
+      { "title": "Tab to accept", "detail": "Codeium suggests completions inline." },
+      { "title": "Use Chat", "detail": "Ask for explanations or tests." }
+    ],
+    "parameters": [{ "label": "Languages", "value": "70+" }, { "label": "Cost", "value": "Free tier" }]
+  },
+  {
+    "id": "tabnine",
+    "name": "Tabnine",
+    "tagline": "Privacy-first AI code completion that can run on your own hardware.",
+    "category": "Coding",
+    "free": false,
+    "url": "https://www.tabnine.com",
+    "emoji": "🔑",
+    "promptPresets": [
+      { "label": "Private completion", "value": "// secure API route handler with rate limiting, input validation, and structured error responses" }
+    ],
+    "negativeSeed": "leaking secrets, unvalidated input, missing rate limit",
+    "workflow": [
+      { "title": "Choose deployment", "detail": "Cloud or self-hosted for privacy." },
+      { "title": "Train on your code", "detail": "Custom model learns your style." },
+      { "title": "Complete inline", "detail": "Tab to accept suggestions." }
+    ],
+    "parameters": [{ "label": "Deploy", "value": "Self-host" }, { "label": "Privacy", "value": "High" }]
+  },
+  {
+    "id": "replit-ai",
+    "name": "Replit Agent",
+    "tagline": "Build and deploy full apps from a prompt, right in the browser.",
+    "category": "Coding",
+    "free": false,
+    "url": "https://replit.com",
+    "emoji": "☁️",
+    "promptPresets": [
+      { "label": "Full-stack app", "value": "build a URL shortener with Next.js API routes, Supabase for storage, auth, a dashboard, and deploy to production" }
+    ],
+    "negativeSeed": "incomplete features, broken deploys, missing auth",
+    "workflow": [
+      { "title": "Describe the app", "detail": "Replit Agent scaffolds the project." },
+      { "title": "Iterate", "detail": "Ask for features, fixes, and styling." },
+      { "title": "Deploy", "detail": "One-click host on Replit." }
+    ],
+    "parameters": [{ "label": "Host", "value": "Replit" }, { "label": "Agent", "value": "Built-in" }]
+  },
+  {
+    "id": "v0-dev",
+    "name": "v0 by Vercel",
+    "tagline": "Generate production React + Tailwind UI from a text prompt or screenshot.",
+    "category": "Coding",
+    "free": false,
+    "url": "https://v0.dev",
+    "emoji": "▲",
+    "promptPresets": [
+      { "label": "Landing section", "value": "a pricing section with three tiers, a highlighted 'popular' card, toggle for monthly/yearly, glassmorphism dark mode" }
+    ],
+    "negativeSeed": "generic templates, broken responsive, missing states",
+    "workflow": [
+      { "title": "Describe the UI", "detail": "Be specific about layout and style." },
+      { "title": "Iterate", "detail": "Refine with follow-up prompts." },
+      { "title": "Copy the code", "detail": "Paste into your Next.js project." }
+    ],
+    "parameters": [{ "label": "Stack", "value": "React/Tailwind" }, { "label": "Deploy", "value": "Vercel" }]
+  },
+  {
+    "id": "sourcery-ai",
+    "name": "Sourcery",
+    "tagline": "AI code reviewer that automatically refactors Python and JavaScript PRs.",
+    "category": "Coding",
+    "free": false,
+    "url": "https://sourcery.ai",
+    "emoji": "🔍",
+    "promptPresets": [
+      { "label": "PR review", "value": "review this PR for: duplicated logic, missing error handling, unsafe patterns, and suggest refactors with explanations" }
+    ],
+    "negativeSeed": "nitpicks, false positives, style-only changes",
+    "workflow": [
+      { "title": "Connect your repo", "detail": "GitHub or GitLab integration." },
+      { "title": "Open a PR", "detail": "Sourcery reviews automatically." },
+      { "title": "Apply refactors", "detail": "Accept suggestions inline." }
+    ],
+    "parameters": [{ "label": "Languages", "value": "Python/JS" }, { "label": "Integration", "value": "GitHub" }]
+  },
+  {
+    "id": "chatgpt",
+    "name": "ChatGPT Plus",
+    "tagline": "GPT-4o with custom GPTs, code interpreter, vision, and web browsing.",
+    "category": "Text",
+    "free": false,
+    "url": "https://chat.openai.com",
+    "emoji": "💬",
+    "promptPresets": [
+      { "label": "Chain-of-thought", "value": "Think step by step. Analyze the following problem, break it into sub-problems, solve each, then combine for a final answer: [PROBLEM]" },
+      { "label": "Role prompt", "value": "You are a senior product strategist. Review this feature idea and give me: target user, riskiest assumption, 3 MVP tests, and a pricing model." }
+    ],
+    "negativeSeed": "vague answers, no citations, generic advice",
+    "workflow": [
+      { "title": "Pick a model", "detail": "GPT-4o for complex, 4o-mini for speed." },
+      { "title": "Use a system prompt", "detail": "Set the role and output format." },
+      { "title": "Iterate", "detail": "Ask for refinements or alternatives." }
+    ],
+    "parameters": [{ "label": "Model", "value": "GPT-4o" }, { "label": "Tools", "value": "Vision/Web" }]
+  },
+  {
+    "id": "claude-ai",
+    "name": "Claude by Anthropic",
+    "tagline": "Long-context reasoning, writing, and analysis with a focus on safety.",
+    "category": "Text",
+    "free": false,
+    "url": "https://claude.ai",
+    "emoji": "🧠",
+    "promptPresets": [
+      { "label": "Document analysis", "value": "Analyze this 50-page contract. Extract: key obligations, termination clauses, liability caps, and any unusual or risky terms. Cite section numbers." }
+    ],
+    "negativeSeed": "missed clauses, fabricated citations, vague summaries",
+    "workflow": [
+      { "title": "Upload documents", "detail": "PDFs, code, or paste text." },
+      { "title": "Ask with context", "detail": "Reference specific sections." },
+      { "title": "Iterate", "detail": "Ask follow-ups grounded in the docs." }
+    ],
+    "parameters": [{ "label": "Context", "value": "200k tokens" }, { "label": "Model", "value": "Sonnet" }]
+  },
+  {
+    "id": "perplexity",
+    "name": "Perplexity AI",
+    "tagline": "Answer engine that searches the web and cites sources in real time.",
+    "category": "Text",
+    "free": false,
+    "url": "https://www.perplexity.ai",
+    "emoji": "🔎",
+    "promptPresets": [
+      { "label": "Researched answer", "value": "What are the latest benchmarks for open-source LLMs as of this month? Include model names, benchmark scores, context length, and license. Cite sources." }
+    ],
+    "negativeSeed": "outdated info, missing citations, hallucinated benchmarks",
+    "workflow": [
+      { "title": "Ask a question", "detail": "Be specific for better sourcing." },
+      { "title": "Check citations", "detail": "Click footnotes to verify sources." },
+      { "title": "Follow up", "detail": "Ask deeper questions in the thread." }
+    ],
+    "parameters": [{ "label": "Search", "value": "Real-time" }, { "label": "Citations", "value": "Yes" }]
+  },
+  {
+    "id": "notion-ai",
+    "name": "Notion AI",
+    "tagline": "Write, summarize, and brainstorm inside your docs and databases.",
+    "category": "Text",
+    "free": false,
+    "url": "https://www.notion.so/product/ai",
+    "emoji": "📓",
+    "promptPresets": [
+      { "label": "Meeting notes", "value": "Summarize this transcript into: key decisions, action items with owners and dates, and open questions. Format as a Notion toggle list." }
+    ],
+    "negativeSeed": "missed action items, wrong owners, verbose summary",
+    "workflow": [
+      { "title": "Open a page", "detail": "Press space, then 'Write with AI'." },
+      { "title": "Pick an action", "detail": "Summarize, translate, brainstorm, or draft." },
+      { "title": "Insert or replace", "detail": "Refine the output inline." }
+    ],
+    "parameters": [{ "label": "Actions", "value": "12" }, { "label": "Integration", "value": "Native" }]
+  },
+  {
+    "id": "jasper-ai",
+    "name": "Jasper AI",
+    "tagline": "Marketing copy generator with brand voice training and campaign templates.",
+    "category": "Text",
+    "free": false,
+    "url": "https://www.jasper.ai",
+    "emoji": "✍️",
+    "promptPresets": [
+      { "label": "Ad copy set", "value": "Write 5 Facebook ad variants for [PRODUCT]. Brand voice: witty, confident. Each: hook, 2 benefit lines, CTA. Max 125 characters. A/B test angles: pain, aspiration, social proof." }
+    ],
+    "negativeSeed": "generic hooks, off-brand tone, no CTA",
+    "workflow": [
+      { "title": "Train brand voice", "detail": "Paste examples of your copy." },
+      { "title": "Pick a template", "detail": "Ads, emails, blogs, or social." },
+      { "title": "Generate & refine", "detail": "Edit inline with AI suggestions." }
+    ],
+    "parameters": [{ "label": "Templates", "value": "50+" }, { "label": "Brand voice", "value": "Trainable" }]
+  },
+  {
+    "id": "copy-ai",
+    "name": "Copy.ai",
+    "tagline": "GTM AI platform for generating sales copy, emails, and content at scale.",
+    "category": "Text",
+    "free": false,
+    "url": "https://www.copy.ai",
+    "emoji": "📄",
+    "promptPresets": [
+      { "label": "Cold email sequence", "value": "Write a 3-email cold sequence for [ICP]. Email 1: problem agitation. Email 2: case study. Email 3: soft CTA. Personalize with {{first_name}} and {{company}}." }
+    ],
+    "negativeSeed": "spammy tone, no personalization, weak CTAs",
+    "workflow": [
+      { "title": "Pick a workflow", "detail": "Sales, marketing, or content." },
+      { "title": "Fill the brief", "detail": "ICP, offer, and tone." },
+      { "title": "Generate", "detail": "Copy.ai produces a full set." }
+    ],
+    "parameters": [{ "label": "Workflows", "value": "90+" }, { "label": "Tone", "value": "Custom" }]
+  },
+  {
+    "id": "writesonic",
+    "name": "Writesonic",
+    "tagline": "SEO-optimized article writer with real-time SERP analysis and citations.",
+    "category": "Text",
+    "free": false,
+    "url": "https://writesonic.com",
+    "emoji": "📰",
+    "promptPresets": [
+      { "label": "SEO article", "value": "Write a 1500-word SEO article on [TOPIC]. Target keyword: [KW]. Include H2/H3 structure, internal links, FAQ section, and cite top-ranking sources." }
+    ],
+    "negativeSeed": "keyword stuffing, thin content, broken links",
+    "workflow": [
+      { "title": "Enter your keyword", "detail": "Writesonic analyzes the SERP." },
+      { "title": "Generate outline", "detail": "Review and edit the structure." },
+      { "title": "Write & optimize", "detail": "Full draft with SEO score." }
+    ],
+    "parameters": [{ "label": "Words", "value": "1500" }, { "label": "SEO", "value": "Real-time" }]
+  },
+  {
+    "id": "grammarly-ai",
+    "name": "Grammarly AI",
+    "tagline": "Grammar, tone, and clarity assistant that works everywhere you type.",
+    "category": "Text",
+    "free": false,
+    "url": "https://www.grammarly.com",
+    "emoji": "✏️",
+    "promptPresets": [
+      { "label": "Tone rewrite", "value": "Rewrite this email to be more confident and concise. Keep it warm but direct. Remove hedging words like 'just' and 'I think'." }
+    ],
+    "negativeSeed": "over-formal tone, lost meaning, robotic phrasing",
+    "workflow": [
+      { "title": "Install the extension", "detail": "Works in Gmail, Docs, Slack, and more." },
+      { "title": "Set goals", "detail": "Audience, formality, and intent." },
+      { "title": "Accept suggestions", "detail": "Fix clarity, tone, and correctness." }
+    ],
+    "parameters": [{ "label": "Tone", "value": "Adjustable" }, { "label": "Integration", "value": "Universal" }]
+  },
+  {
+    "id": "anyword-ai",
+    "name": "Anyword",
+    "tagline": "Copywriting AI that scores every variant with a predictive performance score.",
+    "category": "Text",
+    "free": false,
+    "url": "https://anyword.com",
+    "emoji": "📊",
+    "promptPresets": [
+      { "label": "Scored headlines", "value": "Generate 10 headline variants for [ARTICLE]. Score each for engagement and conversion. Target audience: [ICP]. Show predictive score out of 100." }
+    ],
+    "negativeSeed": "low-scorers, vague headlines, no audience fit",
+    "workflow": [
+      { "title": "Describe the copy", "detail": "Type, audience, and platform." },
+      { "title": "Generate variants", "detail": "Each gets a performance score." },
+      { "title": "Pick the winner", "detail": "Use the highest-scoring variant." }
+    ],
+    "parameters": [{ "label": "Scoring", "value": "Predictive" }, { "label": "Variants", "value": "10+" }]
+  },
+  {
+    "id": "rytr-ai",
+    "name": "Rytr",
+    "tagline": "Budget-friendly AI writing assistant with 30+ use cases and tones.",
+    "category": "Text",
+    "free": false,
+    "url": "https://rytr.me",
+    "emoji": "🖊️",
+    "promptPresets": [
+      { "label": "Product description", "value": "Write a product description for [PRODUCT]. Tone: persuasive. Include: key benefit, social proof, specs, and a CTA. Under 150 words." }
+    ],
+    "negativeSeed": "generic benefits, no proof, weak CTA",
+    "workflow": [
+      { "title": "Pick a use case", "detail": "30+ templates available." },
+      { "title": "Set the tone", "detail": "Persuasive, formal, witty, etc." },
+      { "title": "Generate", "detail": "Rytr writes in seconds." }
+    ],
+    "parameters": [{ "label": "Use cases", "value": "30+" }, { "label": "Tones", "value": "20+" }]
+  },
+  {
+    "id": "canva-ai",
+    "name": "Canva Magic Studio",
+    "tagline": "Design platform with AI image generation, text, resize, and magic edit.",
+    "category": "Design",
+    "free": false,
+    "url": "https://www.canva.com/magic-studio",
+    "emoji": "🎨",
+    "promptPresets": [
+      { "label": "Magic design", "value": "create a social media post for [BRAND] announcing [EVENT], brand colors blue and white, modern, include space for a photo and bold headline" }
+    ],
+    "negativeSeed": "off-brand colors, cluttered layout, low-res exports",
+    "workflow": [
+      { "title": "Describe what you want", "detail": "Magic Design generates templates." },
+      { "title": "Magic Edit", "detail": "Select an area and replace it with AI." },
+      { "title": "Resize & export", "detail": "One-click resize for any platform." }
+    ],
+    "parameters": [{ "label": "Templates", "value": "250k+" }, { "label": "AI", "value": "Magic" }]
+  },
+  {
+    "id": "figma-ai",
+    "name": "Figma AI",
+    "tagline": "Generate UI layouts, rename layers, and find components with AI in Figma.",
+    "category": "Design",
+    "free": false,
+    "url": "https://www.figma.com",
+    "emoji": "🖌️",
+    "promptPresets": [
+      { "label": "UI from prompt", "value": "generate a mobile onboarding flow with 3 screens: welcome, feature highlight, and sign-up form. Clean, modern, iOS style." }
+    ],
+    "negativeSeed": "non-standard components, inconsistent spacing, missing states",
+    "workflow": [
+      { "title": "Open Figma", "detail": "Use the AI panel in the toolbar." },
+      { "title": "Describe the layout", "detail": "Screen type, style, and content." },
+      { "title": "Refine", "detail": "Adjust the generated frames manually." }
+    ],
+    "parameters": [{ "label": "Type", "value": "UI/UX" }, { "label": "Platform", "value": "Web" }]
+  },
+  {
+    "id": "khroma-colors",
+    "name": "Khroma",
+    "tagline": "AI color palette generator trained on your favorite color preferences.",
+    "category": "Design",
+    "free": false,
+    "url": "https://www.khroma.co",
+    "emoji": "🌈",
+    "promptPresets": [
+      { "label": "Brand palette", "value": "generate a 5-color brand palette: primary, secondary, accent, light, dark. Mood: trustworthy tech startup. Show hex codes and contrast ratios." }
+    ],
+    "negativeSeed": "low-contrast pairs, clashing hues, muddy neutrals",
+    "workflow": [
+      { "title": "Pick 50 colors", "detail": "Khroma learns your taste." },
+      { "title": "Generate palettes", "detail": "Get infinite combinations." },
+      { "title": "Export", "detail": "Copy hex codes or download." }
+    ],
+    "parameters": [{ "label": "Colors", "value": "5" }, { "label": "Format", "value": "Hex" }]
+  },
+  {
+    "id": "fontjoy-ai",
+    "name": "Fontjoy",
+    "tagline": "Generate balanced font pairings with deep learning contrast control.",
+    "category": "Design",
+    "free": false,
+    "url": "https://fontjoy.com",
+    "emoji": "🔤",
+    "promptPresets": [
+      { "label": "Pairing", "value": "generate a font pairing for a tech blog: bold display heading, readable body, mono for code. High contrast. Google Fonts only." }
+    ],
+    "negativeSeed": "low readability, mismatched weights, decorative body fonts",
+    "workflow": [
+      { "title": "Set contrast", "detail": "Slider from similar to contrasting." },
+      { "title": "Generate", "detail": "Get heading, subheading, body." },
+      { "title": "Lock & export", "detail": "Lock fonts you like and regenerate." }
+    ],
+    "parameters": [{ "label": "Contrast", "value": "Adjustable" }, { "label": "Source", "value": "Google Fonts" }]
+  },
+  {
+    "id": "uizard-ai",
+    "name": "Uizard",
+    "tagline": "Turn hand-drawn sketches into polished UI mockups in seconds.",
+    "category": "Design",
+    "free": false,
+    "url": "https://uizard.io",
+    "emoji": "✏️",
+    "promptPresets": [
+      { "label": "Sketch to UI", "value": "convert uploaded wireframe sketch into a high-fidelity mobile app screen: login form with logo, email/password fields, and sign-in button. Material Design style." }
+    ],
+    "negativeSeed": "misaligned elements, missing components, wrong spacing",
+    "workflow": [
+      { "title": "Upload or sketch", "detail": "Draw on paper or use the canvas." },
+      { "title": "Convert", "detail": "Uizard turns it into real components." },
+      { "title": "Customize", "detail": "Drag, drop, and restyle." }
+    ],
+    "parameters": [{ "label": "Input", "value": "Sketch" }, { "label": "Output", "value": "UI mockup" }]
+  },
+  {
+    "id": "galileo-ai",
+    "name": "Galileo AI",
+    "tagline": "Text-to-UI design tool that generates editable Figma designs from descriptions.",
+    "category": "Design",
+    "free": false,
+    "url": "https://www.usegalileo.ai",
+    "emoji": "🎯",
+    "promptPresets": [
+      { "label": "Dashboard UI", "value": "design a SaaS analytics dashboard: sidebar nav, top KPI cards, line chart, and a recent activity table. Dark mode, modern, clean typography." }
+    ],
+    "negativeSeed": "cluttered layout, missing data states, inconsistent components",
+    "workflow": [
+      { "title": "Describe the screen", "detail": "Type, layout, and style." },
+      { "title": "Generate", "detail": "Galileo creates a Figma file." },
+      { "title": "Edit in Figma", "detail": "Full layers, components, and styles." }
+    ],
+    "parameters": [{ "label": "Output", "value": "Figma" }, { "label": "Components", "value": "Editable" }]
+  },
+  {
+    "id": "leonardo-ai",
+    "name": "Leonardo AI",
+    "tagline": "Game-asset and concept-art image generator with fine-tuned custom models.",
+    "category": "Photo",
+    "free": false,
+    "url": "https://leonardo.ai",
+    "emoji": "🖼️",
+    "promptPresets": [
+      { "label": "Game concept art", "value": "concept art of a cyberpunk market street at night, neon signs, rain, steam, characters in foreground, cinematic wide shot, 16:9" }
+    ],
+    "negativeSeed": "blurry, low detail, inconsistent lighting",
+    "workflow": [
+      { "title": "Pick a model", "detail": "Leonardo's fine-tuned or your custom one." },
+      { "title": "Set guidance", "detail": "Higher = closer to prompt." },
+      { "title": "Generate & upscale", "detail": "Download at up to 4K." }
+    ],
+    "parameters": [{ "label": "Models", "value": "Custom" }, { "label": "Resolution", "value": "4K" }]
+  },
+  {
+    "id": "ideogram-ai",
+    "name": "Ideogram",
+    "tagline": "Image generator with best-in-class typography and text rendering in images.",
+    "category": "Photo",
+    "free": false,
+    "url": "https://ideogram.ai",
+    "emoji": "🔤",
+    "promptPresets": [
+      { "label": "Poster with text", "value": "design a motivational poster: bold text 'SHIP DAILY' centered, sunset gradient background, modern sans-serif, minimal, 4:5" }
+    ],
+    "negativeSeed": "misspelled words, garbled text, wrong fonts",
+    "workflow": [
+      { "title": "Write a prompt with text", "detail": "Put the exact text in quotes." },
+      { "title": "Pick a style", "detail": "Photo, illustration, 3D, or typography." },
+      { "title": "Generate", "detail": "Ideogram renders the text accurately." }
+    ],
+    "parameters": [{ "label": "Typography", "value": "Best-in-class" }, { "label": "Aspect", "value": "4:5" }]
+  },
+  {
+    "id": "flux-image",
+    "name": "FLUX.1",
+    "tagline": "Open-source image model rivaling closed models, with Pro and Schnell variants.",
+    "category": "Photo",
+    "free": false,
+    "url": "https://blackforestlabs.ai",
+    "emoji": "⚡",
+    "promptPresets": [
+      { "label": "Hyperreal portrait", "value": "hyperreal portrait of an elderly fisherman, weathered skin, salt-and-pepper beard, golden hour, 85mm, natural light, skin pores visible --guidance 3.5" }
+    ],
+    "negativeSeed": "plastic skin, waxy texture, oversharpened",
+    "workflow": [
+      { "title": "Pick a variant", "detail": "Pro for quality, Schnell for speed." },
+      { "title": "Set guidance", "detail": "2-4 for FLUX, not 7 like SD." },
+      { "title": "Run locally or via API", "detail": "ComfyUI, Replicate, or fal.ai." }
+    ],
+    "parameters": [{ "label": "Guidance", "value": "3.5" }, { "label": "Model", "value": "FLUX.1 Pro" }]
+  },
+  {
+    "id": "recraft-ai",
+    "name": "Recraft",
+    "tagline": "Vector and brand-consistent image generation with style control.",
+    "category": "Design",
+    "free": false,
+    "url": "https://www.recraft.ai",
+    "emoji": "📐",
+    "promptPresets": [
+      { "label": "Vector icon set", "value": "generate a set of 12 flat vector icons for a weather app: sun, cloud, rain, snow, storm, wind, etc. Consistent stroke, single color, 2px line weight" }
+    ],
+    "negativeSeed": "inconsistent stroke, raster artifacts, mismatched styles",
+    "workflow": [
+      { "title": "Pick a style", "detail": "Vector, illustration, or 3D." },
+      { "title": "Generate", "detail": "Recraft outputs SVG or PNG." },
+      { "title": "Edit & export", "detail": "Restyle or recolor in the editor." }
+    ],
+    "parameters": [{ "label": "Output", "value": "SVG" }, { "label": "Styles", "value": "Brand" }]
+  },
+  {
+    "id": "magnific-upscale",
+    "name": "Magnific AI",
+    "tagline": "AI upscaler that adds hallucinated detail and sharpness to any image.",
+    "category": "Photo",
+    "free": false,
+    "url": "https://magnific.ai",
+    "emoji": "🔍",
+    "promptPresets": [
+      { "label": "Creative upscale", "value": "upscale this 512x512 render to 4K, add fine texture to skin and fabric, enhance background foliage detail, preserve original composition --creativity 0.4" }
+    ],
+    "negativeSeed": "over-sharpened, changed composition, added unwanted elements",
+    "workflow": [
+      { "title": "Upload your image", "detail": "Any resolution accepted." },
+      { "title": "Set creativity", "detail": "Low = faithful, high = reimagined." },
+      { "title": "Upscale", "detail": "Download at up to 4K." }
+    ],
+    "parameters": [{ "label": "Output", "value": "4K" }, { "label": "Creativity", "value": "0.4" }]
+  },
+  {
+    "id": "krea-realtime",
+    "name": "Krea AI",
+    "tagline": "Real-time image generation and enhancement with instant feedback.",
+    "category": "Photo",
+    "free": false,
+    "url": "https://krea.ai",
+    "emoji": "⚡",
+    "promptPresets": [
+      { "label": "Real-time iterate", "value": "minimalist product photo of a glass perfume bottle on marble, soft shadows, warm light, change backdrop to gradient pink in real-time" }
+    ],
+    "negativeSeed": "slow rendering, inconsistent results",
+    "workflow": [
+      { "title": "Start typing", "detail": "Image generates as you type." },
+      { "title": "Adjust in real-time", "detail": "Tweak prompt and see instant changes." },
+      { "title": "Enhance", "detail": "Upscale and add detail post-generation." }
+    ],
+    "parameters": [{ "label": "Mode", "value": "Real-time" }, { "label": "Enhance", "value": "Yes" }]
+  },
+  {
+    "id": "topaz-photo",
+    "name": "Topaz Photo AI",
+    "tagline": "Pro-grade noise reduction, sharpening, and upscaling for photographers.",
+    "category": "Photo",
+    "free": false,
+    "url": "https://www.topazlabs.com/topaz-photo-ai",
+    "emoji": "📷",
+    "promptPresets": [
+      { "label": "Low-light recovery", "value": "apply noise reduction to ISO 6400 shot, recover shadow detail, sharpen subject eyes, upscale to 2x, preserve natural grain" }
+    ],
+    "negativeSeed": "plastic skin, over-smoothed, halos around edges",
+    "workflow": [
+      { "title": "Open your RAW", "detail": "Topaz auto-detects subjects." },
+      { "title": "Let AI denoise", "detail": "Adjust strength to taste." },
+      { "title": "Sharpen & upscale", "detail": "Export full-resolution TIFF." }
+    ],
+    "parameters": [{ "label": "Upscale", "value": "2x" }, { "label": "Input", "value": "RAW" }]
+  },
+  {
+    "id": "gamma-presentations",
+    "name": "Gamma AI",
+    "tagline": "Generate polished presentations, docs, and webpages from a prompt.",
+    "category": "Design",
+    "free": false,
+    "url": "https://gamma.app",
+    "emoji": "📊",
+    "promptPresets": [
+      { "label": "Pitch deck", "value": "create a 10-slide investor pitch deck for [STARTUP]: problem, solution, market, product, traction, business model, team, ask. Modern dark theme, minimal text, bold visuals." }
+    ],
+    "negativeSeed": "text-heavy slides, generic templates, weak visuals",
+    "workflow": [
+      { "title": "Describe the deck", "detail": "Topic, audience, and slide count." },
+      { "title": "Generate outline", "detail": "Review and edit the structure." },
+      { "title": "Present or export", "detail": "Share link or export PPTX." }
+    ],
+    "parameters": [{ "label": "Slides", "value": "10" }, { "label": "Export", "value": "PPTX" }]
+  },
+  {
+    "id": "tome-ai",
+    "name": "Tome AI",
+    "tagline": "AI-native storytelling format for narratives, pitches, and moodboards.",
+    "category": "Design",
+    "free": false,
+    "url": "https://tome.app",
+    "emoji": "📖",
+    "promptPresets": [
+      { "label": "Brand narrative", "value": "create a visual story for [BRAND]: origin, values, product, and vision. 8 slides with AI-generated imagery, bold headlines, and minimal copy." }
+    ],
+    "negativeSeed": "generic imagery, disconnected narrative, cluttered slides",
+    "workflow": [
+      { "title": "Type your topic", "detail": "Tome generates a narrative outline." },
+      { "title": "Add AI images", "detail": "Generate visuals per slide." },
+      { "title": "Share", "detail": "Publish as a link or embed." }
+    ],
+    "parameters": [{ "label": "Format", "value": "Story" }, { "label": "Images", "value": "AI-gen" }]
+  },
+  {
+    "id": "looka-logo",
+    "name": "Looka",
+    "tagline": "AI logo maker that generates full brand kits from your preferences.",
+    "category": "Design",
+    "free": false,
+    "url": "https://looka.com",
+    "emoji": "🐾",
+    "promptPresets": [
+      { "label": "Logo + brand kit", "value": "design a logo for [COMPANY]: modern, tech, blue and green, geometric icon, sans-serif wordmark. Generate brand kit: colors, fonts, social templates." }
+    ],
+    "negativeSeed": "generic icons, clipart style, unreadable at small sizes",
+    "workflow": [
+      { "title": "Enter company name", "detail": "Pick a few logo styles you like." },
+      { "title": "Generate", "detail": "Looka produces dozens of variants." },
+      { "title": "Download brand kit", "detail": "Logo files, colors, and fonts." }
+    ],
+    "parameters": [{ "label": "Output", "value": "Brand kit" }, { "label": "Formats", "value": "SVG/PNG" }]
+  },
+  {
+    "id": "hatchful-logo",
+    "name": "Hatchful by Shopify",
+    "tagline": "Free logo maker with industry-tuned templates and social media kits.",
+    "category": "Design",
+    "free": false,
+    "url": "https://hatchful.shopify.com",
+    "emoji": "🥚",
+    "promptPresets": [
+      { "label": "E-commerce logo", "value": "create a logo for a sustainable coffee brand: earthy tones, hand-drawn coffee bean icon, rounded font. Include Instagram and Facebook profile sizes." }
+    ],
+    "negativeSeed": "stock-template look, wrong industry vibe, pixelated exports",
+    "workflow": [
+      { "title": "Pick your industry", "detail": "Hatchful narrows the templates." },
+      { "title": "Choose a vibe", "detail": "Playful, elegant, modern, etc." },
+      { "title": "Download kit", "detail": "Logo + social profile sizes." }
+    ],
+    "parameters": [{ "label": "Cost", "value": "Free" }, { "label": "Kit", "value": "Social" }]
+  },
+  {
+    "id": "vizcom-ai",
+    "name": "Vizcom AI",
+    "tagline": "Industrial design sketch-to-render tool for product designers.",
+    "category": "Design",
+    "free": false,
+    "url": "https://vizcom.ai",
+    "emoji": "✏️",
+    "promptPresets": [
+      { "label": "Sketch to render", "value": "render this product sketch into a photorealistic 3D model shot: brushed aluminum finish, studio lighting, white backdrop, 3/4 angle view" }
+    ],
+    "negativeSeed": "lost sketch intent, wrong materials, generic lighting",
+    "workflow": [
+      { "title": "Upload a sketch", "detail": "Hand-drawn or digital." },
+      { "title": "Describe materials", "detail": "Finish, color, lighting." },
+      { "title": "Render", "detail": "Vizcom turns it into a polished render." }
+    ],
+    "parameters": [{ "label": "Input", "value": "Sketch" }, { "label": "Output", "value": "Render" }]
+  },
+  {
+    "id": "d-id-avatar",
+    "name": "D-ID Talking Avatars",
+    "tagline": "Turn any still photo into a talking avatar with lip-synced audio.",
+    "category": "Cartoon",
+    "free": false,
+    "url": "https://www.d-id.com",
+    "emoji": "🗣️",
+    "promptPresets": [
+      { "label": "Presenter avatar", "value": "animate portrait photo with provided script, natural lip sync, subtle head movement, professional presenter tone, 60s, 1080p" }
+    ],
+    "negativeSeed": "uncanny valley, frozen face, audio desync",
+    "workflow": [
+      { "title": "Upload a portrait", "detail": "Front-facing photo." },
+      { "title": "Add audio or text", "detail": "TTS or upload your own audio." },
+      { "title": "Generate video", "detail": "Download the talking-head clip." }
+    ],
+    "parameters": [{ "label": "Length", "value": "60s" }, { "label": "Resolution", "value": "1080p" }]
+  },
+  {
+    "id": "heygen-ai",
+    "name": "HeyGen",
+    "tagline": "Create professional AI avatar videos with 300+ voices and custom clones.",
+    "category": "Cartoon",
+    "free": false,
+    "url": "https://www.heygen.com",
+    "emoji": "🎬",
+    "promptPresets": [
+      { "label": "Marketing avatar", "value": "create a 30s marketing video with AI avatar presenter: professional female, business casual, neutral office background, energetic tone, 300+ voice options" }
+    ],
+    "negativeSeed": "stiff delivery, mismatched lip sync, wrong background",
+    "workflow": [
+      { "title": "Pick an avatar", "detail": "100+ stock or clone your own." },
+      { "title": "Paste your script", "detail": "Choose a voice and language." },
+      { "title": "Generate", "detail": "Download MP4 or share link." }
+    ],
+    "parameters": [{ "label": "Avatars", "value": "100+" }, { "label": "Voices", "value": "300+" }]
+  },
+  {
+    "id": "synthesia-ai",
+    "name": "Synthesia",
+    "tagline": "Corporate training and explainer videos with AI presenters in 140+ languages.",
+    "category": "Cartoon",
+    "free": false,
+    "url": "https://synthesia.io",
+    "emoji": "🎥",
+    "promptPresets": [
+      { "label": "Training video", "value": "create a 2-minute employee onboarding video: AI presenter, corporate setting, friendly tone, 3 sections with on-screen text overlays, 1080p" }
+    ],
+    "negativeSeed": "robotic delivery, wrong pronunciation, bland visuals",
+    "workflow": [
+      { "title": "Choose a template", "detail": "Training, explainer, or marketing." },
+      { "title": "Pick an avatar", "detail": "140+ AI presenters." },
+      { "title": "Generate", "detail": "Add screen text and download." }
+    ],
+    "parameters": [{ "label": "Languages", "value": "140+" }, { "label": "Avatars", "value": "140+" }]
+  },
+  {
+    "id": "argon-ai",
+    "name": "Argil AI",
+    "tagline": "Create AI clones of yourself for social content at scale.",
+    "category": "Cartoon",
+    "free": false,
+    "url": "https://argil.ai",
+    "emoji": "🪞",
+    "promptPresets": [
+      { "label": "Body double video", "value": "create a 45s short-form video with my AI clone: speaking directly to camera, energetic, casual tone, TikTok-style captions, vertical 9:16" }
+    ],
+    "negativeSeed": "identity drift, unnatural gestures, mismatched voice",
+    "workflow": [
+      { "title": "Record a clone", "detail": "2 minutes of footage from multiple angles." },
+      { "title": "Write your script", "detail": "Type what you want your clone to say." },
+      { "title": "Generate", "detail": "Get a vertical video ready to post." }
+    ],
+    "parameters": [{ "label": "Clone time", "value": "2m" }, { "label": "Format", "value": "9:16" }]
+  },
+  {
+    "id": "animatediff",
+    "name": "AnimateDiff",
+    "tagline": "Open-source Stable Diffusion animation module for custom motion loops.",
+    "category": "Cartoon",
+    "free": false,
+    "url": "https://github.com/guoyww/AnimateDiff",
+    "emoji": "🎞️",
+    "promptPresets": [
+      { "label": "Motion loop", "value": "animate a portrait with subtle breathing and blinking motion, 16 frames, loopable, low motion strength 5, compatible with SD 1.5 checkpoints" }
+    ],
+    "negativeSeed": "flickering, morphing, jittery motion",
+    "workflow": [
+      { "title": "Load in ComfyUI", "detail": "Add the AnimateDiff sampler node." },
+      { "title": "Pick a checkpoint", "detail": "Any SD 1.5 model works." },
+      { "title": "Set frame count", "detail": "16-24 frames for smooth loops." }
+    ],
+    "parameters": [{ "label": "Frames", "value": "16" }, { "label": "Model", "value": "SD 1.5" }]
+  },
+  {
+    "id": "deforum-ai",
+    "name": "Deforum",
+    "tagline": "Stable Diffusion animation tool for trippy, parameter-driven music videos.",
+    "category": "Cartoon",
+    "free": false,
+    "url": "https://deforum.github.io",
+    "emoji": "🌀",
+    "promptPresets": [
+      { "label": "Music video loop", "value": "3D mode animation, zoom 0.02, rotation 0.01, prompt transition every 20 frames, psychedelic color palette, 120 frames at 8fps" }
+    ],
+    "negativeSeed": "chaotic motion, incoherent transitions, flickering",
+    "workflow": [
+      { "title": "Set keyframes", "detail": "Define motion, zoom, and rotation per frame." },
+      { "title": "Add prompt schedule", "detail": "Change prompts over time." },
+      { "title": "Render", "detail": "Export frames, compile to video." }
+    ],
+    "parameters": [{ "label": "Mode", "value": "3D" }, { "label": "Frames", "value": "120" }]
+  },
+  {
+    "id": "deepbrain-ai",
+    "name": "DeepBrain AI",
+    "tagline": "Hyper-realistic AI human avatars for enterprise video production.",
+    "category": "Cartoon",
+    "free": false,
+    "url": "https://www.deepbrain.io",
+    "emoji": "🧬",
+    "promptPresets": [
+      { "label": "Corporate presenter", "value": "generate a 3-minute corporate presentation with hyper-realistic AI human avatar: business suit, studio backdrop, authoritative tone, multilingual support" }
+    ],
+    "negativeSeed": "uncanny valley, stiff posture, synthetic skin",
+    "workflow": [
+      { "title": "Pick an AI human", "detail": "DeepBrain's photoreal avatars." },
+      { "title": "Paste your script", "detail": "Supports 80+ languages." },
+      { "title": "Generate", "detail": "Download studio-quality video." }
+    ],
+    "parameters": [{ "label": "Languages", "value": "80+" }, { "label": "Realism", "value": "High" }]
+  },
+  {
+    "id": "airtable-ai",
+    "name": "Airtable AI",
+    "tagline": "Add AI fields to your databases for classification, summarization, and drafts.",
+    "category": "Automation",
+    "free": false,
+    "url": "https://www.airtable.com/product/ai",
+    "emoji": "🗂️",
+    "promptPresets": [
+      { "label": "Auto-classify", "value": "add AI field to classify incoming support tickets into: bug, feature request, billing, how-to. Route by category, draft a response, and assign owner." }
+    ],
+    "negativeSeed": "misclassified tickets, generic responses, unassigned items",
+    "workflow": [
+      { "title": "Add an AI field", "detail": "Choose classify, summarize, or draft." },
+      { "title": "Set the prompt", "detail": "Define categories or output format." },
+      { "title": "Automate", "detail": "Trigger workflows from AI output." }
+    ],
+    "parameters": [{ "label": "AI fields", "value": "3 types" }, { "label": "Automations", "value": "Native" }]
+  },
+  {
+    "id": "make-scenarios",
+    "name": "Make.com Scenarios",
+    "tagline": "Visual automation builder with branching, error handling, and AI modules.",
+    "category": "Automation",
+    "free": false,
+    "url": "https://www.make.com/en/scenarios",
+    "emoji": "🔀",
+    "promptPresets": [
+      { "label": "Multi-branch", "value": "scenario with router: if email contains 'invoice' > route to accounting; if 'support' > AI draft reply > Slack approval; if 'press' > add to PR tracker" }
+    ],
+    "negativeSeed": "unhandled branches, missing error routes, infinite loops",
+    "workflow": [
+      { "title": "Build the trigger", "detail": "Email, webhook, or schedule." },
+      { "title": "Add a router", "detail": "Split into conditional paths." },
+      { "title": "Handle errors", "detail": "Add break/error handlers per branch." }
+    ],
+    "parameters": [{ "label": "Branches", "value": "Unlimited" }, { "label": "Error handling", "value": "Built-in" }]
+  },
+  {
+    "id": "relay-ai",
+    "name": "Relay.app",
+    "tagline": "Human-in-the-loop automation that blends AI steps with manual approval.",
+    "category": "Automation",
+    "free": false,
+    "url": "https://relay.app",
+    "emoji": "🤝",
+    "promptPresets": [
+      { "label": "Approval workflow", "value": "AI drafts a customer email > human reviews and edits > AI personalizes final version > send > log to CRM. Add approval gate before send." }
+    ],
+    "negativeSeed": "skipped approvals, no edit tracking, missing audit log",
+    "workflow": [
+      { "title": "Build the flow", "detail": "Drag AI, human, and action steps." },
+      { "title": "Add approval gates", "detail": "Pause for human review." },
+      { "title": "Deploy", "detail": "Relay runs it on schedule or trigger." }
+    ],
+    "parameters": [{ "label": "Human steps", "value": "Yes" }, { "label": "AI", "value": "Built-in" }]
+  },
+  {
+    "id": "stack-ai",
+    "name": "Stack AI",
+    "tagline": "No-code LLM app builder for internal tools, chatbots, and AI agents.",
+    "category": "Automation",
+    "free": false,
+    "url": "https://stackai.com",
+    "emoji": "🏗️",
+    "promptPresets": [
+      { "label": "Internal AI tool", "value": "build an internal support assistant: load help docs into vector DB > GPT-4o answers with citations > log unresolved questions to Slack > weekly fine-tune on new resolutions" }
+    ],
+    "negativeSeed": "hallucinated answers, stale docs, no feedback loop",
+    "workflow": [
+      { "title": "Connect data sources", "detail": "Notion, Drive, or upload." },
+      { "title": "Build the flow", "detail": "Drag LLM, vector, and logic blocks." },
+      { "title": "Deploy", "detail": "Embed as widget or expose as API." }
+    ],
+    "parameters": [{ "label": "Type", "value": "No-code" }, { "label": "LLM", "value": "Any" }]
+  },
+  {
+    "id": "synthesize-audio",
+    "name": "Synthesizer V",
+    "tagline": "AI vocal synthesizer that sings with human-like expressiveness and control.",
+    "category": "Audio",
+    "free": false,
+    "url": "https://dreamtonics.com/synthesizerv",
+    "emoji": "🎤",
+    "promptPresets": [
+      { "label": "AI vocal track", "value": "render a female pop vocal for this melody and lyrics: breathy tone, vibrato on sustained notes, 44.1kHz, export dry stems for mixing" }
+    ],
+    "negativeSeed": "robotic phrasing, pitch drift, unnatural vibrato",
+    "workflow": [
+      { "title": "Load a voice database", "detail": "Pick from AI singers or make your own." },
+      { "title": "Input notes and lyrics", "detail": "Draw in the piano roll." },
+      { "title": "Render", "detail": "Export vocal stems for your DAW." }
+    ],
+    "parameters": [{ "label": "Voices", "value": "Multiple" }, { "label": "Output", "value": "Stems" }]
+  },
+  {
+    "id": "aiva-music",
+    "name": "AIVA",
+    "tagline": "AI composer for cinematic soundtracks, game scores, and orchestral pieces.",
+    "category": "Audio",
+    "free": false,
+    "url": "https://www.aiva.ai",
+    "emoji": "🎼",
+    "promptPresets": [
+      { "label": "Cinematic score", "value": "compose a 3-minute cinematic orchestral piece: slow build, strings and brass, emotional climax at 2:00, key of D minor, tempo 75bpm, export MIDI and WAV" }
+    ],
+    "negativeSeed": "repetitive motifs, muddy orchestration, abrupt endings",
+    "workflow": [
+      { "title": "Pick a style preset", "detail": "Cinematic, jazz, pop, or ambient." },
+      { "title": "Set parameters", "detail": "Key, tempo, duration, instrumentation." },
+      { "title": "Generate & edit", "detail": "Tweak in the score editor, export MIDI." }
+    ],
+    "parameters": [{ "label": "Output", "value": "MIDI/WAV" }, { "label": "Styles", "value": "20+" }]
+  },
+  {
+    "id": "lalal-ai",
+    "name": "LALAL.AI",
+    "tagline": "High-quality stem separation for vocals, drums, bass, and instruments.",
+    "category": "Audio",
+    "free": false,
+    "url": "https://www.lalal.ai",
+    "emoji": "🎵",
+    "promptPresets": [
+      { "label": "Stem extraction", "value": "separate this song into 4 stems: vocals, drums, bass, other. Preserve natural reverb tails, minimize artifacts, export 44.1kHz WAV" }
+    ],
+    "negativeSeed": "bleed between stems, phase artifacts, lost transients",
+    "workflow": [
+      { "title": "Upload your track", "detail": "Any audio format, up to 20 minutes." },
+      { "title": "Pick stem count", "detail": "2, 4, or 6 stems." },
+      { "title": "Download", "detail": "Get separated WAV files." }
+    ],
+    "parameters": [{ "label": "Stems", "value": "4" }, { "label": "Format", "value": "WAV" }]
+  },
+  {
+    "id": "klangai-audio",
+    "name": "Klang AI",
+    "tagline": "AI sound effects generator for game devs and video producers.",
+    "category": "Audio",
+    "free": false,
+    "url": "https://klang.ai",
+    "emoji": "🔊",
+    "promptPresets": [
+      { "label": "Game SFX", "value": "generate 10 footstep sound effects on different surfaces: gravel, wood, metal, grass, snow. Each 0.5s, loopable, 44.1kHz WAV" }
+    ],
+    "negativeSeed": "repetitive steps, unrealistic textures, clipping",
+    "workflow": [
+      { "title": "Describe the sound", "detail": "Material, action, duration, format." },
+      { "title": "Generate variations", "detail": "Get multiple takes per prompt." },
+      { "title": "Download", "detail": "Export as WAV files." }
+    ],
+    "parameters": [{ "label": "Format", "value": "WAV" }, { "label": "Variations", "value": "10+" }]
+  },
+  {
+    "id": "audioshake-ai",
+    "name": "AudioShake",
+    "tagline": "Pro stem separation and lyric transcription for labels and sync licensing.",
+    "category": "Audio",
+    "free": false,
+    "url": "https://audioshake.ai",
+    "emoji": "🎚️",
+    "promptPresets": [
+      { "label": "Sync-ready stems", "value": "separate this track into vocals, instrumental, drums, bass, guitar. Label-ready quality. Also generate time-synced lyrics." }
+    ],
+    "negativeSeed": "artifacts on vocals, timing drift, missing stems",
+    "workflow": [
+      { "title": "Upload your track", "detail": "WAV or MP3, any length." },
+      { "title": "Pick a stem model", "detail": "Vocal, instrumental, or component stems." },
+      { "title": "Download", "detail": "Stems + optional lyric transcript." }
+    ],
+    "parameters": [{ "label": "Quality", "value": "Label" }, { "label": "Lyrics", "value": "Synced" }]
+  },
+  {
+    "id": "landing-ai",
+    "name": "Landing AI",
+    "tagline": "Generate high-converting landing pages from a prompt with AI copy and design.",
+    "category": "Design",
+    "free": false,
+    "url": "https://landing.ai",
+    "emoji": "🚀",
+    "promptPresets": [
+      { "label": "Landing page", "value": "generate a SaaS landing page for [PRODUCT]: hero with headline and CTA, 3 feature cards, social proof, pricing table, FAQ. Modern dark mode, responsive, copy included." }
+    ],
+    "negativeSeed": "generic copy, broken responsive, weak CTAs",
+    "workflow": [
+      { "title": "Describe your product", "detail": "Name, audience, and key benefit." },
+      { "title": "Generate", "detail": "AI creates copy, layout, and design." },
+      { "title": "Publish", "detail": "Deploy to your domain or export HTML." }
+    ],
+    "parameters": [{ "label": "Output", "value": "Full page" }, { "label": "Copy", "value": "AI-gen" }]
+  },
+  {
+    "id": "framer-ai",
+    "name": "Framer AI",
+    "tagline": "Design and publish responsive websites with AI-generated layouts and copy.",
+    "category": "Design",
+    "free": false,
+    "url": "https://framer.com/ai",
+    "emoji": "🖼️",
+    "promptPresets": [
+      { "label": "Website from prompt", "value": "build a portfolio website for a freelance photographer: fullscreen hero gallery, about section, services with pricing, contact form. Minimal, dark, elegant typography." }
+    ],
+    "negativeSeed": "cookie-cutter layout, slow load, broken mobile",
+    "workflow": [
+      { "title": "Describe the site", "detail": "Type, style, and content." },
+      { "title": "AI generates", "detail": "Framer builds a full responsive site." },
+      { "title": "Edit & publish", "detail": "Drag to customize, one-click deploy." }
+    ],
+    "parameters": [{ "label": "Output", "value": "Website" }, { "label": "Deploy", "value": "Framer" }]
+  },
+  {
+    "id": "relume-ai",
+    "name": "Relume Library AI",
+    "tagline": "Generate sitemaps and wireframes from a prompt, export to Figma or Webflow.",
+    "category": "Design",
+    "free": false,
+    "url": "https://www.relume.io",
+    "emoji": "🗂️",
+    "promptPresets": [
+      { "label": "Sitemap + wireframe", "value": "generate a sitemap for a SaaS marketing site: home, features, pricing, blog, about, contact. Then wireframe each page with component-based layouts." }
+    ],
+    "negativeSeed": "missing pages, inconsistent components, no responsive",
+    "workflow": [
+      { "title": "Type your brief", "detail": "Product, audience, and pages." },
+      { "title": "Generate sitemap", "detail": "Relume structures the site." },
+      { "title": "Export", "detail": "Push to Figma or Webflow." }
+    ],
+    "parameters": [{ "label": "Export", "value": "Figma/Webflow" }, { "label": "Components", "value": "1000+" }]
+  },
+  {
+    "id": "durable-ai",
+    "name": "Durable AI",
+    "tagline": "Build a complete business website in 30 seconds from a few answers.",
+    "category": "Design",
+    "free": false,
+    "url": "https://durable.co",
+    "emoji": "🏗️",
+    "promptPresets": [
+      { "label": "Business site", "value": "create a website for a landscaping business: hero with service area, photo gallery, services list, contact form, Google Maps embed, testimonials. Green earthy theme." }
+    ],
+    "negativeSeed": "generic stock, wrong contact info, broken forms",
+    "workflow": [
+      { "title": "Answer 3 questions", "detail": "Business type, name, and location." },
+      { "title": "AI generates", "detail": "Full site with copy, images, and contact." },
+      { "title": "Customize & publish", "detail": "Edit text, swap images, deploy." }
+    ],
+    "parameters": [{ "label": "Speed", "value": "30s" }, { "label": "Pages", "value": "Full site" }]
+  },
+  {
+    "id": "wix-adi",
+    "name": "Wix ADI",
+    "tagline": "AI website builder that designs a full site tailored to your business.",
+    "category": "Design",
+    "free": false,
+    "url": "https://www.wix.com/adi",
+    "emoji": "🌐",
+    "promptPresets": [
+      { "label": "Restaurant site", "value": "build a website for an Italian restaurant: menu with photos, reservation form, hours and map, photo gallery, about the chef. Warm, rustic theme." }
+    ],
+    "negativeSeed": "template-heavy, slow mobile, wrong menu items",
+    "workflow": [
+      { "title": "Answer questions", "detail": "Business type, features, and style." },
+      { "title": "ADI designs", "detail": "Wix assembles a full site." },
+      { "title": "Edit & publish", "detail": "Drag-and-drop to customize." }
+    ],
+    "parameters": [{ "label": "Builder", "value": "ADI" }, { "label": "Templates", "value": "500+" }]
+  },
+  {
+    "id": "10web-ai",
+    "name": "10Web AI",
+    "tagline": "AI WordPress site builder that recreates any page layout from a URL.",
+    "category": "Design",
+    "free": false,
+    "url": "https://10web.io",
+    "emoji": "🕸️",
+    "promptPresets": [
+      { "label": "Clone & rebuild", "value": "recreate the layout of [URL] as an editable WordPress page with Elementor. Improve mobile responsive, optimize images, and add AI-generated copy variations." }
+    ],
+    "negativeSeed": "exact copy (IP risk), broken responsive, slow load",
+    "workflow": [
+      { "title": "Paste a URL", "detail": "10Web recreates the layout." },
+      { "title": "Edit in Elementor", "detail": "Full drag-and-drop control." },
+      { "title": "Publish", "detail": "Deploy to WordPress hosting." }
+    ],
+    "parameters": [{ "label": "Platform", "value": "WordPress" }, { "label": "Builder", "value": "Elementor" }]
+  },
+  {
+    "id": "deepgram-stt",
+    "name": "Deepgram",
+    "tagline": "Real-time speech-to-text API with word-level timestamps and low latency.",
+    "category": "Audio",
+    "free": false,
+    "url": "https://deepgram.com",
+    "emoji": "🗣️",
+    "promptPresets": [
+      { "label": "Live transcription", "value": "transcribe this live audio stream in real-time, word-level timestamps, smart format for punctuation and capitalization, detect language, return partial + final results" }
+    ],
+    "negativeSeed": "high latency, missing punctuation, wrong language",
+    "workflow": [
+      { "title": "Connect audio source", "detail": "Stream via WebSocket or upload a file." },
+      { "title": "Pick a model", "detail": "Nova-2 for accuracy, streaming for live." },
+      { "title": "Get results", "detail": "JSON with timestamps and confidence." }
+    ],
+    "parameters": [{ "label": "Model", "value": "Nova-2" }, { "label": "Latency", "value": "Low" }]
+  },
+  {
+    "id": "assembly-ai",
+    "name": "AssemblyAI",
+    "tagline": "Speech AI for transcription, summarization, sentiment, and speaker diarization.",
+    "category": "Audio",
+    "free": false,
+    "url": "https://www.assemblyai.com",
+    "emoji": "🎙️",
+    "promptPresets": [
+      { "label": "Meeting intelligence", "value": "transcribe this meeting, diarize speakers, generate chapter summaries, extract action items and key topics, detect sentiment per segment" }
+    ],
+    "negativeSeed": "speaker confusion, missed action items, wrong chapters",
+    "workflow": [
+      { "title": "Upload audio", "detail": "Any format, up to 5 hours." },
+      { "title": "Pick models", "detail": "Transcribe, summarize, diarize." },
+      { "title": "Get structured output", "detail": "JSON with all insights." }
+    ],
+    "parameters": [{ "label": "Diarization", "value": "Yes" }, { "label": "Summaries", "value": "Auto" }]
+  },
+  {
+    "id": "whisper-openai",
+    "name": "OpenAI Whisper",
+    "tagline": "Open-source multilingual speech recognition model, runs locally or via API.",
+    "category": "Audio",
+    "free": false,
+    "url": "https://github.com/openai/whisper",
+    "emoji": " Whisper",
+    "promptPresets": [
+      { "label": "Multilingual transcription", "value": "transcribe this 30-minute podcast in Spanish, translate to English, word-level timestamps, detect code-switching, output SRT subtitles" }
+    ],
+    "negativeSeed": "missed code-switches, timing drift, garbled names",
+    "workflow": [
+      { "title": "Choose deployment", "detail": "Run locally or via OpenAI API." },
+      { "title": "Pick model size", "detail": "Tiny for speed, large-v3 for accuracy." },
+      { "title": "Transcribe", "detail": "Get text, SRT, or VTT output." }
+    ],
+    "parameters": [{ "label": "Model", "value": "large-v3" }, { "label": "Languages", "value": "99+" }]
+  },
+  {
+    "id": "bert-vits2",
+    "name": "BERT-VITS2",
+    "tagline": "Open-source TTS with high-quality multi-speaker voice cloning, runs locally.",
+    "category": "Audio",
+    "free": false,
+    "url": "https://github.com/fishaudio/Bert-VITS2",
+    "emoji": "🔊",
+    "promptPresets": [
+      { "label": "Custom TTS", "value": "fine-tune on 30 minutes of target voice audio, generate speech with emotional control, 44.1kHz, export WAV. Support Chinese and English." }
+    ],
+    "negativeSeed": "flat emotion, accent bleed, robotic cadence",
+    "workflow": [
+      { "title": "Collect audio", "detail": "30+ minutes of clean speech." },
+      { "title": "Fine-tune", "detail": "Train on your dataset locally." },
+      { "title": "Inference", "detail": "Generate speech from text." }
+    ],
+    "parameters": [{ "label": "Training", "value": "30m" }, { "label": "Languages", "value": "ZH/EN" }]
+  },
+  {
+    "id": "resemble-ai",
+    "name": "Resemble AI",
+    "tagline": "Enterprise voice cloning with real-time TTS, localization, and emotion control.",
+    "category": "Audio",
+    "free": false,
+    "url": "https://www.resemble.ai",
+    "emoji": "🎭",
+    "promptPresets": [
+      { "label": "Localized voiceover", "value": "clone this English voice and generate Spanish localization with matching emotion and pacing, 48kHz, output broadcast-quality WAV" }
+    ],
+    "negativeSeed": "emotion mismatch, pacing drift, robotic tone",
+    "workflow": [
+      { "title": "Clone a voice", "detail": "Upload 50+ sentences." },
+      { "title": "Add emotions", "detail": "Tag speech with happy, sad, angry." },
+      { "title": "Generate & localize", "detail": "Same voice across languages." }
+    ],
+    "parameters": [{ "label": "Sample rate", "value": "48kHz" }, { "label": "Localization", "value": "Yes" }]
+  },
+  {
+    "id": "uberduck-ai",
+    "name": "Uberduck",
+    "tagline": "TTS and voice cloning with a massive library of character and celebrity voices.",
+    "category": "Audio",
+    "free": false,
+    "url": "https://uberduck.ai",
+    "emoji": "🦆",
+    "promptPresets": [
+      { "label": "Character voice", "value": "generate narration in a cartoon character voice: energetic, exaggerated, comedic tone, 44.1kHz, 30s clip for a social media ad" }
+    ],
+    "negativeSeed": "flat delivery, wrong character, licensing issues",
+    "workflow": [
+      { "title": "Browse voices", "detail": "Thousands of character and celeb voices." },
+      { "title": "Type your text", "detail": "Add pacing and emphasis markers." },
+      { "title": "Generate", "detail": "Download MP3 or WAV." }
+    ],
+    "parameters": [{ "label": "Voices", "value": "5000+" }, { "label": "Output", "value": "MP3/WAV" }]
+  },
+  {
+    "id": "wombo-ai",
+    "name": "Wombo Dream",
+    "tagline": "Turn any photo into a singing, animated video with fun character styles.",
+    "category": "Cartoon",
+    "free": false,
+    "url": "https://www.wombo.ai",
+    "emoji": "🎤",
+    "promptPresets": [
+      { "label": "Singing selfie", "value": "animate this selfie into a singing video, lip sync to selected song, exaggerated expressions, 15s, shareable format" }
+    ],
+    "negativeSeed": "creepy lip sync, identity distortion, wrong song sync",
+    "workflow": [
+      { "title": "Upload a selfie", "detail": "Front-facing photo." },
+      { "title": "Pick a song", "detail": "Browse the trending list." },
+      { "title": "Generate & share", "detail": "Get a fun singing video." }
+    ],
+    "parameters": [{ "label": "Length", "value": "15s" }, { "label": "Style", "value": "Fun" }]
+  },
+  {
+    "id": "reface-ai",
+    "name": "Reface AI",
+    "tagline": "AI face swap app for videos, GIFs, and memes with realistic blending.",
+    "category": "Cartoon",
+    "free": false,
+    "url": "https://reface.ai",
+    "emoji": "😎",
+    "promptPresets": [
+      { "label": "Face swap video", "value": "swap face in this 10s video clip, match skin tone and lighting, preserve expressions, seamless blend, 1080p export" }
+    ],
+    "negativeSeed": "visible blend lines, wrong skin tone, jittery tracking",
+    "workflow": [
+      { "title": "Upload or pick a template", "detail": "Video, GIF, or meme." },
+      { "title": "Upload your selfie", "detail": "Clear front-facing photo." },
+      { "title": "Generate", "detail": "Download or share the swap." }
+    ],
+    "parameters": [{ "label": "Resolution", "value": "1080p" }, { "label": "Length", "value": "10s" }]
+  },
+  {
+    "id": "genmo-ai",
+    "name": "Genmo",
+    "tagline": "Interactive AI video generation with creative control over motion and style.",
+    "category": "Video",
+    "free": false,
+    "url": "https://genmo.ai",
+    "emoji": "✨",
+    "promptPresets": [
+      { "label": "Interactive video", "value": "generate a 5s looping video of a koi pond, gentle water ripples, lotus flowers swaying, top-down view, watercolor style, loopable" }
+    ],
+    "negativeSeed": "hard loop seam, jittery ripples, style flickering",
+    "workflow": [
+      { "title": "Describe your scene", "detail": "Subject, style, and motion." },
+      { "title": "Set interactivity", "detail": "Adjust motion with sliders." },
+      { "title": "Generate", "detail": "Download or share the loop." }
+    ],
+    "parameters": [{ "label": "Length", "value": "5s" }, { "label": "Style", "value": "Watercolor" }]
+  },
+  {
+    "id": "genmo-replay",
+    "name": "Genmo Replay",
+    "tagline": "Open-source video model for high-quality text-to-video, runs on Replicate.",
+    "category": "Video",
+    "free": false,
+    "url": "https://replicate.com/genmo/replay",
+    "emoji": "🔁",
+    "promptPresets": [
+      { "label": "Text-to-video", "value": "a time-lapse of a flower blooming, petals unfurling, soft natural light, macro perspective, 5s at 8fps, cinematic" }
+    ],
+    "negativeSeed": "flickering, morphing petals, unstable lighting",
+    "workflow": [
+      { "title": "Write a prompt", "detail": "Focus on motion and camera." },
+      { "title": "Set frames & FPS", "detail": "5s at 8fps for smooth motion." },
+      { "title": "Run on Replicate", "detail": "API call, download MP4." }
+    ],
+    "parameters": [{ "label": "Frames", "value": "40" }, { "label": "FPS", "value": "8" }]
+  },
+  {
+    "id": "openai-sora",
+    "name": "OpenAI Sora",
+    "tagline": "Text-to-video model generating up to 60s clips with complex scene physics.",
+    "category": "Video",
+    "free": false,
+    "url": "https://openai.com/sora",
+    "emoji": "🌊",
+    "promptPresets": [
+      { "label": "Complex scene", "value": "a drone shot soaring through a canyon, transitioning into an underwater coral reef, continuous camera move, 20s, photorealistic, natural lighting" }
+    ],
+    "negativeSeed": "physics violations, morphing, scene cuts",
+    "workflow": [
+      { "title": "Write a detailed prompt", "detail": "Subject, camera, environment, duration." },
+      { "title": "Set duration", "detail": "Up to 60 seconds." },
+      { "title": "Generate", "detail": "Download the clip from OpenAI." }
+    ],
+    "parameters": [{ "label": "Max length", "value": "60s" }, { "label": "Resolution", "value": "1080p" }]
+  },
+  {
+    "id": "stable-audio",
+    "name": "Stable Audio",
+    "tagline": "Stability AI's music and sound effect generator with fine-grained control.",
+    "category": "Audio",
+    "free": false,
+    "url": "https://stableaudio.com",
+    "emoji": "🎧",
+    "promptPresets": [
+      { "label": "Ambient bed", "value": "generate a 3-minute ambient soundscape for a meditation app: soft pads, distant water sounds, bird calls, no drums, 95bpm, 44.1kHz" }
+    ],
+    "negativeSeed": "harsh frequencies, sudden changes, distracting elements",
+    "workflow": [
+      { "title": "Describe the sound", "detail": "Genre, mood, duration, instrumentation." },
+      { "title": "Set duration", "detail": "Up to 3 minutes." },
+      { "title": "Generate", "detail": "Download WAV or MP3." }
+    ],
+    "parameters": [{ "label": "Length", "value": "3m" }, { "label": "Output", "value": "WAV" }]
+  },
+  {
+    "id": "suno-cover",
+    "name": "Suno Covers",
+    "tagline": "Upload any song and reimagine it in a completely different genre.",
+    "category": "Audio",
+    "free": false,
+    "url": "https://suno.com/cover",
+    "emoji": "🎶",
+    "promptPresets": [
+      { "label": "Genre cover", "value": "upload this pop song and cover it as a 1920s jazz standard: upright bass, clarinet, brushed drums, crooner vocals, 90bpm, vintage tone" }
+    ],
+    "negativeSeed": "genre bleed, wrong tempo, lost melody",
+    "workflow": [
+      { "title": "Upload a song", "detail": "Any audio file." },
+      { "title": "Describe the new genre", "detail": "Style, era, instrumentation." },
+      { "title": "Generate cover", "detail": "Download the reimagined track." }
+    ],
+    "parameters": [{ "label": "Input", "value": "Any song" }, { "label": "Output", "value": "Cover" }]
+  },
+  {
+    "id": "serp-ai",
+    "name": "SERP AI Writer",
+    "tagline": "AI content writer that analyzes search results to draft ranking articles.",
+    "category": "Text",
+    "free": false,
+    "url": "https://serp.ai",
+    "emoji": "📈",
+    "promptPresets": [
+      { "label": "Ranking article", "value": "analyze top 10 results for [KEYWORD], extract common headings and entities, write a 2000-word comprehensive article targeting featured snippet, include FAQ schema" }
+    ],
+    "negativeSeed": "thin content, keyword stuffing, missing entities",
+    "workflow": [
+      { "title": "Enter your keyword", "detail": "SERP AI analyzes the results." },
+      { "title": "Generate outline", "detail": "Based on competitor structure." },
+      { "title": "Write & optimize", "detail": "Full draft with SEO score." }
+    ],
+    "parameters": [{ "label": "Words", "value": "2000" }, { "label": "SERP", "value": "Analyzed" }]
+  },
+  {
+    "id": "frase-ai",
+    "name": "Frase AI",
+    "tagline": "Content research and optimization platform that merges SERP data with AI writing.",
+    "category": "Text",
+    "free": false,
+    "url": "https://frase.io",
+    "emoji": "📋",
+    "promptPresets": [
+      { "label": "Content brief", "value": "generate a content brief for [KEYWORD]: target audience, search intent, recommended word count, key topics to cover, questions to answer, and suggested internal links" }
+    ],
+    "negativeSeed": "shallow briefs, wrong intent, missing topics",
+    "workflow": [
+      { "title": "Enter your keyword", "detail": "Frase pulls SERP data." },
+      { "title": "Generate a brief", "detail": "Outline, topics, and questions." },
+      { "title": "Write & optimize", "detail": "AI draft with topic score." }
+    ],
+    "parameters": [{ "label": "SERP", "value": "Analyzed" }, { "label": "Output", "value": "Brief + draft" }]
+  },
+  {
+    "id": "surfer-ai",
+    "name": "Surfer AI",
+    "tagline": "One-click SEO articles that research, write, and optimize automatically.",
+    "category": "Text",
+    "free": false,
+    "url": "https://surferseo.com/ai",
+    "emoji": "🏄",
+    "promptPresets": [
+      { "label": "One-click article", "value": "write a 2500-word SEO article on [KEYWORD]: research competitors, identify entities, structure with H2/H3, include data points, optimize for topic coverage score 85+" }
+    ],
+    "negativeSeed": "generic intros, missing entities, low topic score",
+    "workflow": [
+      { "title": "Enter your keyword", "detail": "Surfer researches the SERP." },
+      { "title": "Generate", "detail": "AI writes the full article." },
+      { "title": "Optimize", "detail": "Check the topic coverage score." }
+    ],
+    "parameters": [{ "label": "Words", "value": "2500" }, { "label": "Score", "value": "85+" }]
+  },
+  {
+    "id": "scite-ai",
+    "name": "Scite AI",
+    "tagline": "Research assistant that shows how citations support or contrast a claim.",
+    "category": "Text",
+    "free": false,
+    "url": "https://scite.ai",
+    "emoji": "📚",
+    "promptPresets": [
+      { "label": "Literature review", "value": "find papers supporting and contrasting the claim that 'intermittent fasting improves metabolic health'. Show citation context, publication year, and journal impact." }
+    ],
+    "negativeSeed": "cherry-picked citations, missing contrasting evidence, old papers",
+    "workflow": [
+      { "title": "State your claim", "detail": "Scite searches 1B+ citations." },
+      { "title": "Review context", "detail": "See supporting vs contrasting." },
+      { "title": "Export", "detail": "Download references as BibTeX." }
+    ],
+    "parameters": [{ "label": "Citations", "value": "1B+" }, { "label": "Context", "value": "Yes" }]
+  },
+  {
+    "id": "elicit-ai",
+    "name": "Elicit",
+    "tagline": "AI research assistant that finds papers, extracts data, and summarizes findings.",
+    "category": "Text",
+    "free": false,
+    "url": "https://elicit.com",
+    "emoji": "🔬",
+    "promptPresets": [
+      { "label": "Systematic review", "value": "find papers on the effect of creatine on cognitive performance. Extract: sample size, dose, duration, outcome measure, and effect size. Summarize consensus." }
+    ],
+    "negativeSeed": "missed papers, wrong extraction, unsupported conclusions",
+    "workflow": [
+      { "title": "Ask a research question", "detail": "Elicit searches 200M+ papers." },
+      { "title": "Extract data", "detail": "Auto-fill a comparison table." },
+      { "title": "Summarize", "detail": "Get a consensus answer with sources." }
+    ],
+    "parameters": [{ "label": "Papers", "value": "200M+" }, { "label": "Extraction", "value": "Auto" }]
+  },
+  {
+    "id": "consensus-ai",
+    "name": "Consensus",
+    "tagline": "Search engine that answers questions using evidence from peer-reviewed papers.",
+    "category": "Text",
+    "free": false,
+    "url": "https://consensus.app",
+    "emoji": "📄",
+    "promptPresets": [
+      { "label": "Evidence answer", "value": "does creatine improve exercise performance? Find peer-reviewed evidence, show consensus level, sample sizes, and key findings. Cite each paper." }
+    ],
+    "negativeSeed": "unverified claims, missing sample sizes, no citations",
+    "workflow": [
+      { "title": "Ask a yes/no question", "detail": "Consensus searches papers." },
+      { "title": "Review consensus", "detail": "See the level of agreement." },
+      { "title": "Read sources", "detail": "Link to each paper." }
+    ],
+    "parameters": [{ "label": "Source", "value": "Peer-reviewed" }, { "label": "Consensus", "value": "Yes" }]
+  },
+  {
+    "id": "humata-ai",
+    "name": "Humata AI",
+    "tagline": "Chat with your PDFs and get answers with cited page references.",
+    "category": "Text",
+    "free": false,
+    "url": "https://humata.ai",
+    "emoji": "📑",
+    "promptPresets": [
+      { "label": "PDF Q&A", "value": "answer questions from this 200-page PDF manual. Cite the exact page number for each answer. If the answer is not in the document, say so explicitly." }
+    ],
+    "negativeSeed": "hallucinated answers, wrong page cites, out-of-scope claims",
+    "workflow": [
+      { "title": "Upload your PDF", "detail": "Any size, any length." },
+      { "title": "Ask questions", "detail": "Chat interface with citations." },
+      { "title": "Verify", "detail": "Click cites to jump to the page." }
+    ],
+    "parameters": [{ "label": "Input", "value": "PDF" }, { "label": "Citations", "value": "Page-level" }]
+  },
+  {
+    "id": "chatpdf-ai",
+    "name": "ChatPDF",
+    "tagline": "Upload any PDF and chat with it to extract summaries, answers, and citations.",
+    "category": "Text",
+    "free": false,
+    "url": "https://www.chatpdf.com",
+    "emoji": "💬",
+    "promptPresets": [
+      { "label": "Summarize PDF", "value": "summarize this research paper in 5 bullet points: main hypothesis, methodology, key findings, limitations, and conclusion. Then answer follow-up questions." }
+    ],
+    "negativeSeed": "vague summaries, missed findings, no methodology",
+    "workflow": [
+      { "title": "Upload your PDF", "detail": "Drag and drop any file." },
+      { "title": "Ask questions", "detail": "Chat interface, cited answers." },
+      { "title": "Export", "detail": "Save the conversation." }
+    ],
+    "parameters": [{ "label": "Input", "value": "PDF" }, { "label": "Output", "value": "Chat" }]
+  },
+  {
+    "id": "diffusion-studio",
+    "name": "Diffusion Studio",
+    "tagline": "Pro-focused Stable Diffusion UI with ControlNet, LoRA, and inpainting.",
+    "category": "Photo",
+    "free": false,
+    "url": "https://diffusionstudio.com",
+    "emoji": "🖼️",
+    "promptPresets": [
+      { "label": "ControlNet pose", "value": "use OpenPose ControlNet to keep character pose from reference image, generate fashion editorial shot, studio lighting, 85mm, full body, --controlnet openpose --strength 0.8" }
+    ],
+    "negativeSeed": "pose drift, extra limbs, inconsistent lighting",
+    "workflow": [
+      { "title": "Load a base model", "detail": "SDXL or SD 1.5 checkpoint." },
+      { "title": "Add ControlNet", "detail": "Pose, depth, or canny edges." },
+      { "title": "Generate", "detail": "Iterate with inpainting." }
+    ],
+    "parameters": [{ "label": "ControlNet", "value": "Yes" }, { "label": "LoRA", "value": "Supported" }]
+  },
+  {
+    "id": "comfyui-flux",
+    "name": "ComfyUI + FLUX",
+    "tagline": "Node-based image generation pipeline with FLUX models and custom workflows.",
+    "category": "Photo",
+    "free": false,
+    "url": "https://github.com/comfyanonymous/ComfyUI",
+    "emoji": "🔧",
+    "promptPresets": [
+      { "label": "Node pipeline", "value": "build a pipeline: FLUX.1 model > text prompt > CLIP text encode > KSampler (30 steps, cfg 3.5) > VAE decode > save image. Add LoRA loader for style." }
+    ],
+    "negativeSeed": "broken nodes, wrong model paths, OOM errors",
+    "workflow": [
+      { "title": "Install ComfyUI", "detail": "Local or cloud GPU." },
+      { "title": "Load a workflow", "detail": "Drag in a JSON workflow." },
+      { "title": "Queue prompts", "detail": "Batch generate with control." }
+    ],
+    "parameters": [{ "label": "Model", "value": "FLUX" }, { "label": "Interface", "value": "Nodes" }]
+  },
+  {
+    "id": "civitai-models",
+    "name": "Civitai",
+    "tagline": "Largest hub for Stable Diffusion models, LoRAs, embeddings, and workflows.",
+    "category": "Photo",
+    "free": false,
+    "url": "https://civitai.com",
+    "emoji": "🌐",
+    "promptPresets": [
+      { "label": "LoRA fine-tune", "value": "find a LoRA for photorealistic portraits, merge with base SDXL at weight 0.7, generate: editorial headshot, soft beauty light, 85mm, natural skin --lora portrait_v2:0.7" }
+    ],
+    "negativeSeed": "wrong LoRA weight, base model mismatch, overfit artifacts",
+    "workflow": [
+      { "title": "Browse models", "detail": "Filter by base model and type." },
+      { "title": "Download", "detail": "LoRA, checkpoint, or embedding." },
+      { "title": "Use in your UI", "detail": "Load in A1111 or ComfyUI." }
+    ],
+    "parameters": [{ "label": "Models", "value": "10k+" }, { "label": "Type", "value": "LoRA/Checkpoint" }]
+  },
+  {
+    "id": "playground-v3",
+    "name": "Playground v3",
+    "tagline": "Image generator with board-based prompt editing and style presets.",
+    "category": "Photo",
+    "free": false,
+    "url": "https://playground.com",
+    "emoji": "🎠",
+    "promptPresets": [
+      { "label": "Style preset", "value": "generate a product hero image: sneaker on a pedestal, dramatic spotlight, smoke effects, cyberpunk color palette, --preset cinematic --aspect 1:1" }
+    ],
+    "negativeSeed": "boring background, wrong product angle, flat lighting",
+    "workflow": [
+      { "title": "Pick a preset", "detail": "Cinematic, analog, or digital art." },
+      { "title": "Write your prompt", "detail": "Use the board for sections." },
+      { "title": "Iterate", "detail": "Generate variations and refine." }
+    ],
+    "parameters": [{ "label": "Presets", "value": "20+" }, { "label": "Aspect", "value": "1:1" }]
+  },
+  {
+    "id": "lexica-art",
+    "name": "Lexica",
+    "tagline": "Search engine for AI art with a built-in fine-tuned image generator.",
+    "category": "Photo",
+    "free": false,
+    "url": "https://lexica.art",
+    "emoji": "🔍",
+    "promptPresets": [
+      { "label": "Reverse search", "value": "search for 'minimalist mountain landscape' to find 1000+ AI-generated examples with full prompts, then generate a variation with modified colors and aspect ratio" }
+    ],
+    "negativeSeed": "unoriginal results, low quality, wrong style",
+    "workflow": [
+      { "title": "Search by keyword", "detail": "Browse millions of AI images." },
+      { "title": "Copy a prompt", "detail": "Use a proven prompt as a base." },
+      { "title": "Generate", "detail": "Use Lexica's fine-tuned model." }
+    ],
+    "parameters": [{ "label": "Database", "value": "Millions" }, { "label": "Search", "value": "Yes" }]
+  },
+  {
+    "id": "bing-image",
+    "name": "Bing Image Creator",
+    "tagline": "Free DALL-E 3 powered image generation inside Bing, no subscription needed.",
+    "category": "Photo",
+    "free": false,
+    "url": "https://www.bing.com/create",
+    "emoji": "🎨",
+    "promptPresets": [
+      { "label": "DALL-E 3 prompt", "value": "a cute robot barista making coffee in a cozy cafe, warm lighting, 3D render style, vibrant colors, detailed" }
+    ],
+    "negativeSeed": "low detail, wrong aspect, text artifacts",
+    "workflow": [
+      { "title": "Go to Bing Image Creator", "detail": "Sign in with a Microsoft account." },
+      { "title": "Type your prompt", "detail": "DALL-E 3 handles complex prompts." },
+      { "title": "Download", "detail": "Get 1024x1024 images." }
+    ],
+    "parameters": [{ "label": "Model", "value": "DALL-E 3" }, { "label": "Resolution", "value": "1024" }]
+  },
+  {
+    "id": "dalle-3",
+    "name": "DALL-E 3",
+    "tagline": "OpenAI's image model with strong prompt adherence and text rendering.",
+    "category": "Photo",
+    "free": false,
+    "url": "https://openai.com/dall-e-3",
+    "emoji": "🖼️",
+    "promptPresets": [
+      { "label": "Detailed scene", "value": "a vintage bookstore interior, warm amber lighting, towering wooden shelves, a cat sleeping on a stack of books, dust motes in sunbeams, oil painting style" }
+    ],
+    "negativeSeed": "wrong text, extra objects, distorted perspective",
+    "workflow": [
+      { "title": "Access via ChatGPT Plus", "detail": "Or use the OpenAI API." },
+      { "title": "Write a rich prompt", "detail": "DALL-E 3 follows detailed descriptions." },
+      { "title": "Generate", "detail": "Get 1024x1024 or wide/tall variants." }
+    ],
+    "parameters": [{ "label": "Model", "value": "DALL-E 3" }, { "label": "Resolution", "value": "1024" }]
+  },
+  {
+    "id": "photoroom-ai",
+    "name": "Photoroom AI",
+    "tagline": "AI photo editor for background removal, product shots, and batch processing.",
+    "category": "Photo",
+    "free": false,
+    "url": "https://www.photoroom.com",
+    "emoji": "📷",
+    "promptPresets": [
+      { "label": "Product shot", "value": "remove background from product photo, place on clean white studio backdrop, add soft shadow and reflection, batch process 50 images with consistent lighting" }
+    ],
+    "negativeSeed": "jagged edges, missing shadows, inconsistent backgrounds",
+    "workflow": [
+      { "title": "Upload your photo", "detail": "Single or batch." },
+      { "title": "Remove background", "detail": "AI detects the subject." },
+      { "title": "Add a backdrop", "detail": "Studio, color, or AI scene." }
+    ],
+    "parameters": [{ "label": "Batch", "value": "50+" }, { "label": "Output", "value": "PNG/JPG" }]
+  },
+  {
+    "id": "claid-ai",
+    "name": "Claid AI",
+    "tagline": "API for image enhancement, upscaling, and color correction at scale.",
+    "category": "Photo",
+    "free": false,
+    "url": "https://claid.ai",
+    "emoji": "✨",
+    "promptPresets": [
+      { "label": "Batch enhance", "value": "enhance 100 product photos: upscale to 2x, correct white balance, increase sharpness, remove noise, maintain consistent colors across the batch. API call." }
+    ],
+    "negativeSeed": "over-sharpened, color shift, inconsistent batch",
+    "workflow": [
+      { "title": "Connect via API", "detail": "Upload images or pass URLs." },
+      { "title": "Set operations", "detail": "Upscale, enhance, color correct." },
+      { "title": "Get results", "detail": "Download enhanced images." }
+    ],
+    "parameters": [{ "label": "Upscale", "value": "2x" }, { "label": "API", "value": "REST" }]
+  },
+  {
+    "id": "pixelcut-ai",
+    "name": "Pixelcut AI",
+    "tagline": "Product photo editor with AI background, upscale, and batch listing tools.",
+    "category": "Photo",
+    "free": false,
+    "url": "https://www.pixelcut.ai",
+    "emoji": "✂️",
+    "promptPresets": [
+      { "label": "Marketplace listing", "value": "remove background, place product on pure white, add soft shadow, upscale to 2000x2000, export for Amazon listing compliance" }
+    ],
+    "negativeSeed": "non-compliant background, wrong dimensions, missing shadow",
+    "workflow": [
+      { "title": "Upload product photo", "detail": "Single or batch." },
+      { "title": "Pick a template", "detail": "Amazon, Shopify, or custom." },
+      { "title": "Export", "detail": "Download compliant images." }
+    ],
+    "parameters": [{ "label": "Templates", "value": "Marketplace" }, { "label": "Batch", "value": "Yes" }]
+  },
+  {
+    "id": "modelscope-3d",
+    "name": "ModelScope 3D",
+    "tagline": "Text-to-3D model generator with good topology for prototyping.",
+    "category": "3D",
+    "free": false,
+    "url": "https://modelscope.cn",
+    "emoji": "🧊",
+    "promptPresets": [
+      { "label": "Prototype mesh", "value": "generate a 3D model of a futuristic chair from this description, 8k tris, clean topology, UV unwrapped, export as GLB for AR preview" }
+    ],
+    "negativeSeed": "messy topology, missing UVs, non-printable mesh",
+    "workflow": [
+      { "title": "Type a prompt", "detail": "Describe the object in detail." },
+      { "title": "Generate", "detail": "ModelScope produces a draft mesh." },
+      { "title": "Download", "detail": "Export GLB, OBJ, or FBX." }
+    ],
+    "parameters": [{ "label": "Triangles", "value": "8k" }, { "label": "Format", "value": "GLB" }]
+  },
+  {
+    "id": "point-e-3d",
+    "name": "OpenAI Point-E",
+    "tagline": "Fast text-to-3D point cloud model, generates in seconds for prototyping.",
+    "category": "3D",
+    "free": false,
+    "url": "https://github.com/openai/point-e",
+    "emoji": "⚡",
+    "promptPresets": [
+      { "label": "Quick prototype", "value": "generate a 3D point cloud of a coffee mug, 4096 points, 1 minute inference, export as PLY for quick AR preview or mesh conversion" }
+    ],
+    "negativeSeed": "sparse points, wrong shape, no color",
+    "workflow": [
+      { "title": "Install locally", "detail": "Or use on Replicate." },
+      { "title": "Type a prompt", "detail": "Simple objects work best." },
+      { "title": "Generate point cloud", "detail": "Export PLY or convert to mesh." }
+    ],
+    "parameters": [{ "label": "Points", "value": "4096" }, { "label": "Speed", "value": "Fast" }]
+  },
+  {
+    "id": "shap-e-3d",
+    "name": "OpenAI Shap-E",
+    "tagline": "Text or image to 3D implicit function, outputs textured meshes or NeRFs.",
+    "category": "3D",
+    "free": false,
+    "url": "https://github.com/openai/shap-e",
+    "emoji": "🧩",
+    "promptPresets": [
+      { "label": "Textured mesh", "value": "generate a 3D model of a potted succulent plant, textured, 360 degree, export as GLB with PBR textures, suitable for web AR" }
+    ],
+    "negativeSeed": "untextured mesh, wrong geometry, flat shading",
+    "workflow": [
+      { "title": "Install locally", "detail": "Or run on Replicate." },
+      { "title": "Provide text or image", "detail": "Image-to-3D is more accurate." },
+      { "title": "Generate", "detail": "Export GLB or NeRF." }
+    ],
+    "parameters": [{ "label": "Output", "value": "GLB/NeRF" }, { "label": "Texture", "value": "Yes" }]
+  },
+  {
+    "id": "gaussian-splatting",
+    "name": "Gaussian Splatting",
+    "tagline": "NeRF alternative for photoreal 3D scene reconstruction from video.",
+    "category": "3D",
+    "free": false,
+    "url": "https://github.com/graphdeco-inria/gaussian-splatting",
+    "emoji": "📸",
+    "promptPresets": [
+      { "label": "Scene reconstruction", "value": "reconstruct a 3D scene from this 30-second video walkaround of a room. Generate Gaussian splats, render novel viewpoints, export for web viewer" }
+    ],
+    "negativeSeed": "floaty artifacts, blurry regions, reconstruction gaps",
+    "workflow": [
+      { "title": "Capture video", "detail": "Slow walk around the subject." },
+      { "title": "Process frames", "detail": "COLMAP for camera poses." },
+      { "title": "Train splats", "detail": "Export for web or Unreal." }
+    ],
+    "parameters": [{ "label": "Input", "value": "Video" }, { "label": "Output", "value": "Splats" }]
+  },
+  {
+    "id": "lumalabs-scanner",
+    "name": "Luma Scanner",
+    "tagline": "Capture real-world spaces and objects into NeRF-based 3D with your phone.",
+    "category": "3D",
+    "free": false,
+    "url": "https://lumalabs.ai/scanner",
+    "emoji": "📱",
+    "promptPresets": [
+      { "label": "Room scan", "value": "scan this room by walking around slowly, capture 40-60 seconds of video, generate a NeRF 3D model, export as mesh or share as interactive web link" }
+    ],
+    "negativeSeed": "reconstruction gaps, floaty artifacts, misaligned walls",
+    "workflow": [
+      { "title": "Open Luma app", "detail": "iOS or web." },
+      { "title": "Record a walkaround", "detail": "Move slowly, cover all angles." },
+      { "title": "Generate & share", "detail": "Export mesh or web link." }
+    ],
+    "parameters": [{ "label": "Input", "value": "Phone video" }, { "label": "Output", "value": "NeRF/Mesh" }]
+  },
+  {
+    "id": "spline-ai",
+    "name": "Spline AI",
+    "tagline": "3D design tool with AI text-to-3D scene generation right in the browser.",
+    "category": "3D",
+    "free": false,
+    "url": "https://spline.design",
+    "emoji": "🎲",
+    "promptPresets": [
+      { "label": "3D scene", "value": "create a 3D product hero scene: floating perfume bottle, soft particles, gradient background, rotating camera animation, export as web embed or video" }
+    ],
+    "negativeSeed": "non-manifold geometry, wrong proportions, broken animation",
+    "workflow": [
+      { "title": "Open Spline", "detail": "Browser-based 3D editor." },
+      { "title": "Use AI prompt", "detail": "Describe the scene you want." },
+      { "title": "Edit & export", "detail": "Publish as web embed or video." }
+    ],
+    "parameters": [{ "label": "Platform", "value": "Browser" }, { "label": "Export", "value": "Web/Video" }]
+  },
+  {
+    "id": "colossal-ai",
+    "name": "Colossal-AI",
+    "tagline": "Open-source framework for training and serving large AI models efficiently.",
+    "category": "Coding",
+    "free": false,
+    "url": "https://github.com/hpcaitech/ColossalAI",
+    "emoji": "🦾",
+    "promptPresets": [
+      { "label": "Distributed training", "value": "configure Colossal-AI for training a 7B parameter model: 8 GPUs, ZeRO-3, gradient checkpointing, mixed precision, batch size 32, sequence length 4096" }
+    ],
+    "negativeSeed": "OOM errors, wrong shard config, slow throughput",
+    "workflow": [
+      { "title": "Install Colossal-AI", "detail": "pip install colossalai." },
+      { "title": "Configure strategy", "detail": "ZeRO, Gemini, or tensor parallel." },
+      { "title": "Train", "detail": "Launch distributed training." }
+    ],
+    "parameters": [{ "label": "GPUs", "value": "8" }, { "label": "Strategy", "value": "ZeRO-3" }]
+  },
+  {
+    "id": "lmql-ai",
+    "name": "LMQL",
+    "tagline": "Query language for LLMs that lets you constrain output with SQL-like syntax.",
+    "category": "Coding",
+    "free": false,
+    "url": "https://lmql.ai",
+    "emoji": "❓",
+    "promptPresets": [
+      { "label": "Constrained generation", "value": "argmax \"Summarize: {doc}\\nSummary: [ANSWER]\" where len(TOKENS(ANSWER)) < 50 and STOPS_AT(ANSWER, '.') from 'openai/gpt-4o'" }
+    ],
+    "negativeSeed": "unconstrained output, wrong length, syntax errors",
+    "workflow": [
+      { "title": "Write an LMQL query", "detail": "Mix natural language with constraints." },
+      { "title": "Set the model", "detail": "Local or OpenAI." },
+      { "title": "Run", "detail": "Get constrained, structured output." }
+    ],
+    "parameters": [{ "label": "Type", "value": "Query language" }, { "label": "Constraints", "value": "Yes" }]
+  },
+  {
+    "id": "langchain-ai",
+    "name": "LangChain",
+    "tagline": "Framework for building LLM apps with chains, agents, and retrieval.",
+    "category": "Coding",
+    "free": false,
+    "url": "https://python.langchain.com",
+    "emoji": "🔗",
+    "promptPresets": [
+      { "label": "RAG pipeline", "value": "build a retrieval chain: load docs > split > embed with OpenAI > store in Chroma > retriever > GPT-4o > custom prompt with citations. Add conversational memory." }
+    ],
+    "negativeSeed": "hallucinated answers, stale embeddings, missing memory",
+    "workflow": [
+      { "title": "Install LangChain", "detail": "pip install langchain." },
+      { "title": "Build a chain", "detail": "Prompt + LLM + output parser." },
+      { "title": "Add retrieval", "detail": "Vector store + retriever for RAG." }
+    ],
+    "parameters": [{ "label": "Language", "value": "Python/JS" }, { "label": "Integrations", "value": "600+" }]
+  },
+  {
+    "id": "llamaindex",
+    "name": "LlamaIndex",
+    "tagline": "Data framework for connecting custom data sources to LLMs for RAG.",
+    "category": "Coding",
+    "free": false,
+    "url": "https://www.llamaindex.ai",
+    "emoji": "🦙",
+    "promptPresets": [
+      { "label": "Data-driven chatbot", "value": "build a chatbot over 10,000 PDFs: parse with LlamaParse > chunk > embed > store in Pinecone > query engine with citations > streaming response with source nodes" }
+    ],
+    "negativeSeed": "missed documents, wrong chunk size, no citations",
+    "workflow": [
+      { "title": "Load documents", "detail": "LlamaHub has 100+ loaders." },
+      { "title": "Index & store", "detail": "Vector or graph index." },
+      { "title": "Query", "detail": "Engines with citations and streaming." }
+    ],
+    "parameters": [{ "label": "Loaders", "value": "100+" }, { "label": "Index", "value": "Vector/Graph" }]
+  },
+  {
+    "id": "dify-ai",
+    "name": "Dify",
+    "tagline": "Open-source LLM app platform for visual prompt engineering and deployment.",
+    "category": "Coding",
+    "free": false,
+    "url": "https://dify.ai",
+    "emoji": "🧪",
+    "promptPresets": [
+      { "label": "Prompt app", "value": "create a customer support bot: system prompt with tone rules, knowledge base from FAQ docs, temperature 0.3, output as JSON with {answer, confidence, escalate_flag}, deploy as API" }
+    ],
+    "negativeSeed": "hallucinated answers, wrong escalation, no guardrails",
+    "workflow": [
+      { "title": "Create an app", "detail": "Chatbot, agent, or workflow." },
+      { "title": "Add knowledge", "detail": "Upload docs for RAG." },
+      { "title": "Deploy", "detail": "API, widget, or backend." }
+    ],
+    "parameters": [{ "label": "Open source", "value": "Yes" }, { "label": "Deploy", "value": "API/Widget" }]
+  },
+  {
+    "id": "autogpt",
+    "name": "AutoGPT",
+    "tagline": "Experimental autonomous AI agent that chains tasks to reach a goal.",
+    "category": "Coding",
+    "free": false,
+    "url": "https://github.com/Significant-Gravitas/AutoGPT",
+    "emoji": "🤖",
+    "promptPresets": [
+      { "label": "Autonomous task", "value": "goal: research the top 5 competitors to [PRODUCT], summarize their pricing and features, and draft a competitive analysis report. Save to output.md. Maximum 10 steps." }
+    ],
+    "negativeSeed": "infinite loops, off-topic research, unsafe actions",
+    "workflow": [
+      { "title": "Set a goal", "detail": "Be specific about the desired output." },
+      { "title": "Configure tools", "detail": "Web search, file write, etc." },
+      { "title": "Run autonomously", "detail": "AutoGPT plans and executes steps." }
+    ],
+    "parameters": [{ "label": "Type", "value": "Agent" }, { "label": "Open source", "value": "Yes" }]
+  },
+  {
+    "id": "agentgpt",
+    "name": "AgentGPT",
+    "tagline": "Browser-based autonomous AI agent you can configure without coding.",
+    "category": "Coding",
+    "free": false,
+    "url": "https://agentgpt.reworkd.ai",
+    "emoji": "🌐",
+    "promptPresets": [
+      { "label": "Research agent", "value": "name: Market Researcher. goal: find 10 emerging AI startups in healthcare, summarize what they do, funding stage, and key differentiators. Output as a structured table." }
+    ],
+    "negativeSeed": "shallow research, wrong data format, missing startups",
+    "workflow": [
+      { "title": "Name your agent", "detail": "Give it a role." },
+      { "title": "Set the goal", "detail": "Define the desired output." },
+      { "title": "Run in browser", "detail": "Watch it plan and execute." }
+    ],
+    "parameters": [{ "label": "Interface", "value": "Browser" }, { "label": "Type", "value": "Agent" }]
+  },
+  {
+    "id": "devika-ai",
+    "name": "Devika",
+    "tagline": "Open-source AI software engineer agent that plans, codes, and debugs.",
+    "category": "Coding",
+    "free": false,
+    "url": "https://github.com/stitionai/devika",
+    "emoji": "👩‍💻",
+    "promptPresets": [
+      { "label": "Build a feature", "value": "task: add a CSV upload and parsing feature to this Python web app. Create the upload route, parse with pandas, show preview table, handle errors. Write tests." }
+    ],
+    "negativeSeed": "incomplete features, broken tests, missing error handling",
+    "workflow": [
+      { "title": "Describe the task", "detail": "Be specific about the feature." },
+      { "title": "Devika plans", "detail": "Breaks it into subtasks." },
+      { "title": "Code & debug", "detail": "Generates and tests the code." }
+    ],
+    "parameters": [{ "label": "Type", "value": "AI engineer" }, { "label": "Open source", "value": "Yes" }]
+  },
+  {
+    "id": "sweep-ai",
+    "name": "Sweep AI",
+    "tagline": "AI junior developer that turns GitHub issues into pull requests automatically.",
+    "category": "Coding",
+    "free": false,
+    "url": "https://sweep.dev",
+    "emoji": "🧹",
+    "promptPresets": [
+      { "label": "Issue to PR", "value": "GitHub issue: 'Add dark mode toggle to settings page'. Sweep should: add a theme context, create a toggle component, wire to localStorage, update CSS, and open a PR with tests." }
+    ],
+    "negativeSeed": "incomplete PRs, broken tests, missed edge cases",
+    "workflow": [
+      { "title": "Install Sweep", "detail": "Connect to your GitHub repo." },
+      { "title": "Create an issue", "detail": "Describe the feature or bug." },
+      { "title": "Sweep opens a PR", "detail": "Review and merge." }
+    ],
+    "parameters": [{ "label": "Integration", "value": "GitHub" }, { "label": "Output", "value": "PR" }]
+  }
+]
