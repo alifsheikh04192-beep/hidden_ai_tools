@@ -2529,5 +2529,131 @@
       { "title": "Sweep opens a PR", "detail": "Review and merge." }
     ],
     "parameters": [{ "label": "Integration", "value": "GitHub" }, { "label": "Output", "value": "PR" }]
+  },
+    {
+    "id": "elevenlabs-voice",
+    "name": "ElevenLabs",
+    "tagline": "Industry-leading AI voice generator and realistic text-to-speech.",
+    "category": "Audio",
+    "free": true,
+    "url": "https://elevenlabs.io",
+    "emoji": "🎙️",
+    "promptPresets": [
+      {
+        "label": "Documentary Narrator",
+        "value": "Deep, authoritative, slow-paced cinematic narration"
+      }
+    ],
+    "negativeSeed": "robotic, monotone, tinny, background noise",
+    "workflow": [
+      { "title": "Write script", "detail": "Add text with natural pauses using hyphens or ellipses." },
+      { "title": "Pick voice", "detail": "Choose from library or clone your custom voice." },
+      { "title": "Export audio", "detail": "Download high quality MP3/WAV." }
+    ],
+    "parameters": [
+      { "label": "Stability", "value": "0.50" },
+      { "label": "Clarity", "value": "0.75" }
+    ]
+  },
+  {
+    "id": "suno-ai",
+    "name": "Suno AI",
+    "tagline": "Generate full multi-instrumental songs with vocals from simple prompts.",
+    "category": "Audio",
+    "free": true,
+    "url": "https://suno.com",
+    "emoji": "🎵",
+    "promptPresets": [
+      {
+        "label": "Lo-Fi Chill Beat",
+        "value": "Nostalgic lo-fi hip hop, warm rhodes, vinyl crackle, cozy vibes"
+      }
+    ],
+    "negativeSeed": "distorted vocals, harsh highs, screeching",
+    "workflow": [
+      { "title": "Style Prompt", "detail": "Enter genre, mood, and instrument tags." },
+      { "title": "Lyrics", "detail": "Input custom lyrics or select instrumental mode." },
+      { "title": "Generate", "detail": "Produce two 2-minute clips instantly." }
+    ],
+    "parameters": [
+      { "label": "Vocal Style", "value": "Chill Melodic" },
+      { "label": "Tempo", "value": "85 BPM" }
+    ]
+  },
+  {
+    "id": "recraft-ai",
+    "name": "Recraft AI",
+    "tagline": "Vector, 3D icon, and illustration generation for designers.",
+    "category": "Design",
+    "free": true,
+    "url": "https://www.recraft.ai",
+    "emoji": "🎨",
+    "promptPresets": [
+      {
+        "label": "Clean Vector Icon",
+        "value": "Minimalist vector app icon, pastel gradient, isometric"
+      }
+    ],
+    "negativeSeed": "blurry, rasterized artifacts, low resolution",
+    "workflow": [
+      { "title": "Pick Style", "detail": "Select Vector Art, 3D, or Pixel art palette." },
+      { "title": "Enter Prompt", "detail": "Describe subject, shapes, and lighting." },
+      { "title": "Export SVG", "detail": "Download clean, infinite scalable SVG files." }
+    ],
+    "parameters": [
+      { "label": "Format", "value": "SVG / PNG" },
+      { "label": "Style", "value": "Flat 2D Vector" }
+    ]
+  },
+  {
+    "id": "cursor-editor",
+    "name": "Cursor",
+    "tagline": "AI-first code editor designed for rapid software development.",
+    "category": "Code",
+    "free": true,
+    "url": "https://www.cursor.com",
+    "emoji": "💻",
+    "promptPresets": [
+      {
+        "label": "Refactor Code",
+        "value": "Refactor component for performance, remove unused imports and types"
+      }
+    ],
+    "negativeSeed": "deprecated syntax, missing dependencies",
+    "workflow": [
+      { "title": "Open Project", "detail": "Import repository directly into Cursor." },
+      { "title": "Ctrl+K / Cmd+K", "detail": "Prompt directly within your code file." },
+      { "title": "Composer", "detail": "Build full multi-file features across codebase." }
+    ],
+    "parameters": [
+      { "label": "Model", "value": "Claude 3.5 Sonnet" },
+      { "label": "Context", "value": "Full Codebase" }
+    ]
+  },
+  {
+    "id": "pika-labs",
+    "name": "Pika",
+    "tagline": "Generate, animate, and add effects to videos using prompt commands.",
+    "category": "Video",
+    "free": true,
+    "url": "https://pika.art",
+    "emoji": "⚡",
+    "promptPresets": [
+      {
+        "label": "Cinematic Drone Shot",
+        "value": "Aerial drone shot over mist-covered pine forest at sunrise, 4k"
+      }
+    ],
+    "negativeSeed": "blurry, morphing bodies, artifacts, low frame rate",
+    "workflow": [
+      { "title": "Upload or Prompt", "detail": "Upload starting image or write text description." },
+      { "title": "Pikaffects", "detail": "Apply melt, crush, explode, or inflate physics." },
+      { "title": "Download", "detail": "Export smooth MP4 clip." }
+    ],
+    "parameters": [
+      { "label": "Motion", "value": "4" },
+      { "label": "FPS", "value": "24" }
+    ]
   }
+
 ]
